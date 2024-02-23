@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.box1 {
+  height: 100vh;
+  background-color: #B5C0D0;
+}
+
+.box2 {
+  height: 100vh;
+  background-color: #CCD3CA;
+  // overflow: hidden;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.box3 {
+  height: 100vh;
+  background-color: #F5E8DD;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.box4 {
+  height: 100vh;
+  background-color: #EED3D9;
+  // display: flex;
+  // flex-wrap: wrap; 
+  // justify-content: center;
+  // align-items: center;
+}
+
+// .skillBox {
+//   margin-top: 20vh;
+//   margin-left: 10vw;
+//   text-align: start;
+
+// }
+
+.skillBox img {
+  width: 3vw;
+  height: 5vh;
+}
+
+// .backend {
+//   padding  : 3vw;
+// }
+
+.skillBox {
+  display: flex;
+  margin-top: 20vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.backend,
+.frontend,
+.tools {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px; /* 각 카테고리 사이의 간격 조정 */
+}
+
+.backend img,
+.frontend img,
+.tools img {
+  margin: 10px; /* 이미지 간격 조정 */
+}
