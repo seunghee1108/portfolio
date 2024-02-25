@@ -55,8 +55,11 @@
 .skillBox {
   display: flex;
   margin-top: 20vh;
+  margin-left: 10vw;
+  padding: 5vw;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
 }
 
 .backend,
