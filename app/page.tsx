@@ -24,8 +24,8 @@ function Index() {
       <div ref={box1Ref} className={`${styles.div} ${styles.box1}`}></div>
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
         {/* skills */}
-        <h2>SKILL</h2>
         <div className={styles.skillBox}>
+        <h2>SKILL</h2>
           <div className={styles.backend}>
             <img src="/js.png" alt="javascript" />
             <img src="/ts.png" alt="typescript" />
@@ -41,7 +41,7 @@ function Index() {
             <img src="/tailwind.png" alt="tailwind" />
             <img src="/nextjs.svg" alt="next.js" />
             <img src="/python.png" alt="python" />
-            <img src="/docker2.png" alt="docker" />
+            {/* <img src="/docker2.png" alt="docker" /> */}
           </div>
 
           <div className={styles.tools}>
@@ -54,7 +54,9 @@ function Index() {
         </div>
 
         {/* skill 설명 */}
-        <div></div>
+        <div>
+          dd
+        </div>
       </div>
       <div ref={box3Ref} className={`${styles.div} ${styles.box3}`}>
         {/* 내용을 추가할 부분 */}
