@@ -54,14 +54,15 @@ function Index() {
         </div>
 
         {/* skill 설명 */}
-        <div>
-          dd
+        <div className={styles.skillContent}>
+          스킬 설명
         </div>
       </div>
       <div ref={box3Ref} className={`${styles.div} ${styles.box3}`}>
         {/* 내용을 추가할 부분 */}
-        <h2>Box 3 Content</h2>
-        <p>This is the content of box 3.</p>
+        <div className={styles.project}>
+          <div>프로젝트 내용</div>
+        </div>
       </div>
       <div ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
         {/* 내용을 추가할 부분 */}
