@@ -1,15 +1,20 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
+import skillsData, { SkillData } from "./skill/page";
 
 function Index() {
+  const [skillDescription, setSkillDescription] = useState("");
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
   const box3Ref = useRef(null);
   const box4Ref = useRef(null);
+
+  const handleSkillClick = (description: string) => {
+    setSkillDescription(description);
+  };
 
   return (
     <div className={styles.container}>
@@ -23,43 +28,27 @@ function Index() {
       </div>
       <div ref={box1Ref} className={`${styles.div} ${styles.box1}`}></div>
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
-        {/* skills */}
         <div className={styles.skillBox}>
-        {/* <h2>SKILL</h2> */}
           <div className={styles.backend}>
-            <img src="/js.png" alt="javascript" />
-            <img src="/ts.png" alt="typescript" />
-            <img src="/mariadb.png" alt="mariadb" />
-            <img src="/mongodb.png" alt="mongodb" />
-            <img src="/aws2.png" alt="aws" />
+            {skillsData.map((skill: SkillData, index: number) => (
+              <div key={index} className={styles.skillItem}>
+                <img
+                  src={skill.src}
+                  alt={skill.alt}
+                  onClick={() => handleSkillClick(skill.description)}
+                />
+              </div>
+            ))}
           </div>
-
-          <div className={styles.frontend}>
-            <img src="/html.png" alt="html" />
-            <img src="/css.png" alt="css" />
-            <img src="/react.png" alt="react" />
-            <img src="/tailwind.png" alt="tailwind" />
-            <img src="/nextjs.svg" alt="next.js" />
-            <img src="/python.png" alt="python" />
-            {/* <img src="/docker2.png" alt="docker" /> */}
+          <div className={styles.skillContent}>
+            {skillDescription && (
+              <div className={styles.skillDescription}>{skillDescription}</div>
+            )}
           </div>
-
-          <div className={styles.tools}>
-            <img src="/notion.svg" alt="notion" />
-            <img src="/slack2.png" alt="slack" />
-            <img src="/figma.png" alt="figma" />
-            <img src="/github.png" alt="github" />
-            <img src="/vscode.png" alt="vscode" />
-          </div>
-        </div>
-
-        {/* skill 설명 */}
-        <div className={styles.skillContent}>
-          스킬 설명
         </div>
       </div>
 
-{/* 프로젝트 내용  */}
+      {/* 프로젝트 내용  */}
       <div ref={box3Ref} className={`${styles.div} ${styles.box3}`}>
         <div className={styles.project}>
           <div>프로젝트 내용</div>
