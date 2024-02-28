@@ -1,5 +1,3 @@
-// skills.ts
-
 export interface SkillData {
   src: string;
   alt: string;
