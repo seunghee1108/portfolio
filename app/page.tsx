@@ -52,9 +52,13 @@ function Index() {
       {/* 프로젝트 내용  */}
       <div ref={box3Ref} className={`${styles.div} ${styles.box3}`}>
         <div className={styles.project}>
-          <div>프로젝트 내용</div>
+         
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
       </div>
+      
       <div ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
         {/* 내용을 추가할 부분 */}
         <h2>Box 4 Content</h2>
