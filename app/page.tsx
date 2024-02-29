@@ -17,6 +17,18 @@ function Index() {
     setSkillDescription(description);
   };
 
+  const handleProjectContentClick = () => {
+    const projectContentElement = document.querySelector(
+      `.${styles.projectContent}`
+    );
+    if (projectContentElement) {
+      window.scrollTo({
+        top: projectContentElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -50,19 +62,21 @@ function Index() {
       </div>
 
       {/* 프로젝트 내용  */}
-      <div ref={box3Ref} className={`${styles.div} ${styles.box3}`}>
+      <div
+        ref={box3Ref}
+        className={`${styles.div} ${styles.box3}`}
+        onClick={handleProjectContentClick}
+      >
         <div className={styles.project}>
-         
-            <div></div>
-            <div></div>
-            <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
-      
+
       <div ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
         {/* 내용을 추가할 부분 */}
-        <h2>Box 4 Content</h2>
-        <p>This is the content of box 4.</p>
+        <div className={styles.projectContent}>프로젝트 자세하게 설명</div>
       </div>
     </div>
   );
