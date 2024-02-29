@@ -21,12 +21,13 @@
 
 .box3 {
   height: 100vh;
-  background-color: #F5E8DD;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
+  background-color:#F5E8DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   flex-wrap: wrap;
 }
+
 
 .box4 {
   height: 100vh;
@@ -74,7 +75,27 @@
   background-color: cadetblue;
 }
 
+// .project {
+//   margin-top:  30vh;
+//   margin-left: 10vw;
+//   width: 100vw;
+//   height: 100vh;
+//   flex-direction: row;
+// }
+
 .project {
-  margin-top: 20vh;
-  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  margin: 3vw;
+}
+
+.project > div {
+  width: 20vw;
+  height: 70vh;
+  background-color:azure; /* 배경색은 원하는 색상으로 변경하세요 */
+  margin-right: 5vw; /* 각 div 사이의 가로 간격을 조절합니다 */
+}
+
+.project > div:last-child {
+    margin-right: 0; /* 마지막 div에는 오른쪽 여백을 없앱니다 */
 }
