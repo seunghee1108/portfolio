@@ -12,18 +12,19 @@ function Index() {
   const box2Ref = useRef(null);
   const box3Ref = useRef(null);
   const box4Ref = useRef(null);
+  const box5Ref = useRef(null);
 
   const handleSkillClick = (description: string) => {
     setSkillDescription(description);
   };
 
+
   const handleProjectContentClick = () => {
-    const projectContentElement = document.querySelector(
-      `.${styles.projectContent}`
-    );
+    const projectContentElement = document.getElementById('projectContent');
     if (projectContentElement) {
+      const box4OffsetTop = box4Ref.current.offsetTop;
       window.scrollTo({
-        top: projectContentElement.offsetTop,
+        top: box4OffsetTop,
         behavior: "smooth",
       });
     }
@@ -37,9 +38,14 @@ function Index() {
           box2Ref={box2Ref}
           box3Ref={box3Ref}
           box4Ref={box4Ref}
+          box5Ref={box5Ref}
         />
       </div>
+
+      {/* ABOUT */}
       <div ref={box1Ref} className={`${styles.div} ${styles.box1}`}></div>
+
+      {/* SKILL */}
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
         <div className={styles.skillBox}>
           <div className={styles.backend}>
@@ -61,7 +67,7 @@ function Index() {
         </div>
       </div>
 
-      {/* 프로젝트 내용  */}
+      {/* PROJECT */}
       <div
         ref={box3Ref}
         className={`${styles.div} ${styles.box3}`}
@@ -74,9 +80,18 @@ function Index() {
         </div>
       </div>
 
-      <div ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
-        {/* 내용을 추가할 부분 */}
+      {/* PROJECT-CONTENT */}
+      <div id="projectContent" ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
+  <div className={styles.projectContent}>프로젝트 자세하게 설명</div>
+</div>
+      {/* <div ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
         <div className={styles.projectContent}>프로젝트 자세하게 설명</div>
+      </div> */}
+
+      {/* CONTACT */}
+      <div ref={box5Ref} className={`${styles.div} ${styles.box5}`}>
+
+        <div className={styles.contact}>Contact</div>
       </div>
     </div>
   );
