@@ -18,9 +18,8 @@ function Index() {
     setSkillDescription(description);
   };
 
-
   const handleProjectContentClick = () => {
-    const projectContentElement = document.getElementById('projectContent');
+    const projectContentElement = document.getElementById("projectContent");
     if (projectContentElement) {
       const box4OffsetTop = box4Ref.current.offsetTop;
       window.scrollTo({
@@ -81,16 +80,16 @@ function Index() {
       </div>
 
       {/* PROJECT-CONTENT */}
-      <div id="projectContent" ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
-  <div className={styles.projectContent}>프로젝트 자세하게 설명</div>
-</div>
-      {/* <div ref={box4Ref} className={`${styles.div} ${styles.box4}`}>
+      <div
+        id="projectContent"
+        ref={box4Ref}
+        className={`${styles.div} ${styles.box4}`}
+      >
         <div className={styles.projectContent}>프로젝트 자세하게 설명</div>
-      </div> */}
+      </div>
 
       {/* CONTACT */}
       <div ref={box5Ref} className={`${styles.div} ${styles.box5}`}>
-
         <div className={styles.contact}>Contact</div>
       </div>
     </div>
