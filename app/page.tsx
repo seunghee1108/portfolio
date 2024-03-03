@@ -73,7 +73,11 @@ function Index() {
         onClick={handleProjectContentClick}
       >
         <div className={styles.project}>
-          <div></div>
+          <div>
+            <div className={styles.projectOne}>
+              <img src="/tourmaps.png" alt="tourmaps" />
+            </div>
+          </div>
           <div></div>
           <div></div>
         </div>
