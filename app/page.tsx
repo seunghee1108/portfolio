@@ -5,7 +5,7 @@ import React, { useRef, useState } from "react";
 import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
 import skillsData, { SkillData } from "./skill/page";
-
+import ProjectPage from "./project/page"; 
 
 function Index() {
   const [skillDescription, setSkillDescription] = useState("");
@@ -73,35 +73,7 @@ function Index() {
         className={`${styles.div} ${styles.box3}`}
         onClick={handleProjectContentClick}
       >
-        <div className={styles.project}>
-          <div>
-            <div className={styles.projectOne}>
-              <img src="/tourmaps.png" alt="tourmaps" />
-              <div>
-                <h1>TOURMAPS</h1>
-                <p>개인 프로젝트</p>
-              </div>
-            </div>
-          </div>
-          <div>
-          <div className={styles.projectOne}>
-              <img src="/tourmaps.png" alt="tourmaps" />
-              <div>
-                <h1>TOURMAPS</h1>
-                <p>개인 프로젝트</p>
-              </div>
-            </div>
-          </div>
-          <div>
-          <div className={styles.projectOne}>
-              <img src="/tourmaps.png" alt="tourmaps" />
-              <div>
-                <h1>TOURMAPS</h1>
-                <p>개인 프로젝트</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectPage />
       </div>
 
       {/* PROJECT-CONTENT */}
@@ -111,7 +83,6 @@ function Index() {
         className={`${styles.div} ${styles.box4}`}
       >
         <div className={styles.projectContent}>
-
           {/* left */}
           <div className={styles.contentImage}>
             <img src="/tourmaps.png" alt="tourmaps" />
@@ -122,7 +93,6 @@ function Index() {
               <p>GITHUB</p>
             </div>
           </div>
-
           {/* right */}
           <div className={styles.contentBox}>
             <div>
@@ -136,7 +106,6 @@ function Index() {
               <p>기술입니다</p>
             </div>
           </div>
-
         </div>
       </div>
 
