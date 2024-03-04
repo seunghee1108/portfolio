@@ -97,45 +97,83 @@
 
 .project>div {
   // margin-top: 10vh;
-  width: 27vw;
-  height: 70vh;
+  width: 20vw;
+  height: 50vh;
   background-color: azure;
   margin-right: 5vw;
   display: flex;
   justify-content: center;
   // align-items: ;
-    flex-wrap: wrap;
-    
+  flex-wrap: wrap;
+
+}
+
+.project img {
+  width: 16vw;
+  height: 20vh;
+  margin-top: 3vh;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //     flex-wrap: wrap;
 }
 
 .project>div:last-child {
   margin-right: 0;
 }
 
+
 .projectContent {
-  
   margin-top: 20vh;
-  // margin-left: 10vw;
   width: 70vw;
   height: 70vh;
   background-color: #B5C0D0;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: 7vw;
+  // padding: 3vw;
 }
 
-.projectOne{
+.contentImage {
+  width: 30vw;
+  height: 60vh;
+  display: flex;
+  // align-items: start;
+  // justify-content: start;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+
+.contentImage img {
   width: 25vw;
-  height: 35vh;
-  background-color:aquamarine;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentImage div {
+  width: 25vw;
+  height: auto;
   margin-top: 3vh;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  //   flex-wrap: wrap;
 }
 
-.projectOne img{
-  width: 25vw;
-  height: 35vh;
+
+.contentImage div p {
+  padding-bottom: 10px;
+}
+
+.contentBox {
+  width: 30vw;
+  height: 60vh;
+  background-color: aquamarine;
+}
+
+.contentBox {
+  div {
+    padding: 2vh;
+    color: #333;
+  }
 }
