@@ -1,23 +1,27 @@
-import React from "react";
+import React from 'react';
 import styles from "@/app/styles/main.module.scss";
 
-const ProjectPage: React.FC = () => {
+interface ProjectPageProps {
+  handleProjectClick: (project: string) => void;
+}
+
+const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
   return (
     <div className={styles.project}>
-      <div>
+      <div onClick={() => handleProjectClick("TOURMAPS")}>
+        <h1>TOURMAPS</h1>
+        <p>개인 프로젝트</p>
         <img src="/tourmaps.png" alt="TOURMAPS" />
-        <h1>찻 번째 프로젝트</h1>
-        <p>찻 번째 프로젝트 설명</p>
       </div>
-      <div>
-        <img src="/docker.png" alt="두 번째 프로젝트" />
+      <div onClick={() => handleProjectClick("두 번째 프로젝트")}>
         <h1>두 번째 프로젝트</h1>
         <p>두 번째 프로젝트 설명</p>
+        <img src="/docker.png" alt="두 번째 프로젝트" />
       </div>
-      <div>
-        <img src="/js.png" alt="세 번째 프로젝트" />
+      <div onClick={() => handleProjectClick("세 번째 프로젝트")}>
         <h1>세 번째 프로젝트</h1>
         <p>세 번째 프로젝트 설명</p>
+        <img src="/css.png" alt="세 번째 프로젝트" />
       </div>
     </div>
   );
