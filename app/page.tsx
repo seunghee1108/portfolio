@@ -6,6 +6,7 @@ import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
 import skillsData, { SkillData } from "./skill/page";
 import ProjectPage from "./project/page"; 
+import ProjectDetails from "./projectContent/page";
 
 function Index() {
   const [skillDescription, setSkillDescription] = useState("");
@@ -82,31 +83,8 @@ function Index() {
         ref={box4Ref}
         className={`${styles.div} ${styles.box4}`}
       >
-        <div className={styles.projectContent}>
-          {/* left */}
-          <div className={styles.contentImage}>
-            <img src="/tourmaps.png" alt="tourmaps" />
-            <div>
-              <h1>TOURMAPS</h1>
-              <p>설명</p>
-              <p>배포링크</p>
-              <p>GITHUB</p>
-            </div>
-          </div>
-          {/* right */}
-          <div className={styles.contentBox}>
-            <div>
-              <h1>프로젝트 설명</h1>
-              <p>설명입니다</p>
-              <br />
-              <h1>후기 및 소감</h1>
-              <p>후기입니다</p>
-              <br />
-              <h1>STACK</h1>
-              <p>기술입니다</p>
-            </div>
-          </div>
-        </div>
+<ProjectDetails project="TOURMAPS" />
+
       </div>
 
       {/* CONTACT */}
