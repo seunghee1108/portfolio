@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
 import React, { useRef, useState } from "react";
 import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
 import skillsData, { SkillData } from "./skill/page";
-import ProjectPage from "./project/page"; 
+import ProjectPage from "./project/page";
 import ProjectDetails from "./projectContent/page";
 
 function Index() {
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [skillDescription, setSkillDescription] = useState("");
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
@@ -18,6 +18,10 @@ function Index() {
 
   const handleSkillClick = (description: string) => {
     setSkillDescription(description);
+  };
+
+  const handleProjectClick = (project: string) => {
+    setSelectedProject(project);
   };
 
   const handleProjectContentClick = () => {
@@ -74,7 +78,7 @@ function Index() {
         className={`${styles.div} ${styles.box3}`}
         onClick={handleProjectContentClick}
       >
-        <ProjectPage />
+        <ProjectPage handleProjectClick={handleProjectClick} />
       </div>
 
       {/* PROJECT-CONTENT */}
@@ -83,8 +87,7 @@ function Index() {
         ref={box4Ref}
         className={`${styles.div} ${styles.box4}`}
       >
-<ProjectDetails project="TOURMAPS" />
-
+        {selectedProject && <ProjectDetails project={selectedProject} />}
       </div>
 
       {/* CONTACT */}
