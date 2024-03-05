@@ -95,29 +95,17 @@
   margin: 3vw;
 }
 
-// .project>div {
-//   // margin-top: 10vh;
-//   width: 20vw;
-//   height: 50vh;
-//   background-color: azure;
-//   margin-right: 5vw;
-//   display: flex;
-//   justify-content: center;
-//   // align-items: ;
-//   flex-wrap: wrap;
-
-// }
-
 
 .project>div {
   width: 20vw;
   height: 50vh;
   background-color: azure;
-  margin-right: 5vw;
+  // margin-right: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // text-align: center; 
+  text-align: center;
+  margin: 3vw;
 }
 
 .fontBox {
@@ -143,15 +131,15 @@
   /* h2와 p 사이의 간격을 조정합니다. */
 }
 
-.project p {
-  width: 100%;
-  /* div의 전체 너비를 차지하도록 설정합니다. */
-  margin-top: 10px;
-  /* 이미지와의 간격을 조정합니다. */
-  margin-left: 2vw;
-  align-items: center;
-  display: flex;
-}
+// .project p {
+//   width: 100%;
+//   /* div의 전체 너비를 차지하도록 설정합니다. */
+//   margin-top: 10px;
+//   /* 이미지와의 간격을 조정합니다. */
+//   margin-left: 2vw;
+//   align-items: center;
+//   display: flex;
+// }
 
 .project img {
   width: 18vw;
@@ -163,17 +151,22 @@
   //     flex-wrap: wrap;
 }
 
+.fontContent {
+  width: 18vw;
+  align-items: flex-start; /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+  display: flex;
+  flex-direction: column; /* 아이템들을 세로로 배치합니다. */
+}
 
-// .project>div {
-//   width: 20vw;
-//   height: 50vh;
-//   background-color: azure;
-//   margin-right: 5vw;
-//   display: flex;
-//   flex-direction: column; /* 요소들을 세로로 배치합니다. */
-//   justify-content: center;
-//   align-items: center; /* 요소들을 수직 가운데 정렬합니다. */
-// }
+.fontContent p {
+  text-align: left; /* 텍스트를 왼쪽으로 정렬합니다. */
+}
+
+.fontContent h4 {
+  font-size: 1.1em;
+
+  text-align: left; /* 텍스트를 왼쪽으로 정렬합니다. */
+}
 
 .projectContent {
   margin-top: 20vh;
