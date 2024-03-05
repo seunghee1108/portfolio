@@ -8,17 +8,17 @@ interface ProjectDetailsProps {
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   const projectContent: { [key: string]: { description: string, link: string, github: string } } = {
-    'TOURMAPS': {
+    'BOARD': {
       description: '투어 맵 서비스에 대한 프로젝트 설명입니다.',
       link: '투어 맵 서비스의 배포 링크',
       github: '투어 맵 서비스의 깃허브 링크'
     },
-    '두 번째 프로젝트': {
+    'TOURMAPS': {
       description: '두 번째 프로젝트에 대한 설명입니다.',
       link: '두 번째 프로젝트의 배포 링크',
       github: '두 번째 프로젝트의 깃허브 링크'
     },
-    '세 번째 프로젝트': {
+    'ERP-PROJECT': {
       description: '세 번째 프로젝트에 대한 설명입니다.',
       link: '세 번째 프로젝트의 배포 링크',
       github: '세 번째 프로젝트의 깃허브 링크'
