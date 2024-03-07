@@ -16,7 +16,7 @@ function Topbar({ box1Ref, box2Ref, box3Ref, box4Ref, box5Ref}) {
   return (
     <div className={styles.topbar}>
       <div className={styles.div2}>
-        <Link href="/">BANGSEUNGHEE</Link>
+        <Link href="/">SEUNGHEE</Link>
       </div>
       <div className={styles.div3}>
         <a className={styles.link} onClick={() => scrollToRef(box1Ref)}>
