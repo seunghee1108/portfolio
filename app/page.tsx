@@ -48,8 +48,30 @@ function Index() {
       </div>
 
       {/* ABOUT */}
-      <div ref={box1Ref} className={`${styles.div} ${styles.box1}`}></div>
-     
+      <div ref={box1Ref} className={`${styles.div} ${styles.box1}`}>
+        <div className={styles.aboutBox}>
+          <div>
+            <img src="/photo.png" alt="image" />
+          </div>
+          <div className={styles.fontBox}>
+            <div className={styles.stackBox}>
+              <p>FULL STACK</p>
+            </div>
+            <h1>안녕하세요. 방승희입니다.</h1>
+            <p>새로운 것을 내 것으로 만들며, 매일 한층 더 성장하는 사람</p>
+            <div>
+              <p>
+                모든 경험과 학습내용은 Notion으로 기록 후 끊임없이 심화하며
+                연구합니다.
+                <br />
+                성실함을 바탕으로 시행착오를 겪으며 전문적인 개발자가 되어가는
+                중입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* SKILL */}
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
         <div className={styles.skillBox}>
