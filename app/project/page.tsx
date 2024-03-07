@@ -16,13 +16,12 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h3>Solo project</h3>
         </div>
         <div className={styles.fontContent}>
-          <p>
-            Express와 MongoDB를 이용한 게시판 프로젝트로, 사용자는 회원가입,
-            로그인하여 글 및 댓글을 작성할 수 있습니다.
-          </p>
+          <p>회원가입, 로그인, 글 작성, 댓글 작성이 가능한 게시판입니다.</p>
           <br />
-          <h4>기술스택</h4>
-          <p>MongoDB, </p>
+          <div className={styles.stackBox}>
+            <h4>Stack</h4>
+            <p>JavaScript, Node.js, Express, MongoDB, EJS, CSS </p>
+          </div>
         </div>
       </div>
       <div onClick={() => handleProjectClick("TOURMAPS")}>
@@ -31,13 +30,37 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h2>TOURMAPS</h2>
           <h3>Solo project</h3>
         </div>
-        <p>dd</p>
+        <div className={styles.fontContent}>
+          <p>
+            지역별, 여행 코스별로 선택한 지역, 해당 코스에 포함된 관광지 정보를
+            제공하는 여행 웹페이지입니다
+          </p>
+          <br />
+          <div className={styles.stackBox}>
+          <h4>Stack</h4>
+          <p>avaScript, TypeScript, React, Next.js, AWS, SCSS </p>
+          </div>
+        </div>
       </div>
       <div onClick={() => handleProjectClick("ERP-PROJECT")}>
         <img src="/erp.png" alt="ERPPROJECT" />
         <div className={styles.fontBox}>
           <h2>ERP-PROJECT</h2>
-          <h3>Team project</h3>
+          <h3>Team project</h3>{" "}
+        </div>
+        <div className={styles.fontContent}>
+          <p>
+            소비자의 편의와 경험을 중시한 쇼핑몰 개발과, 관리자가 쇼핑몰
+            사이트를 통합 관리할 수 있는 ERP 툴 개발을 결합한 프로젝트입니다.
+          </p>
+          <br />
+          <div className={styles.stackBox}>
+          <h4>Stack</h4>
+          <p>
+            TypeScript, Node.js, Express, Next.js, MariaDB, React, Babel,
+            JsonWebToken, TailWindCSS
+          </p>
+          </div>
         </div>
       </div>
     </div>

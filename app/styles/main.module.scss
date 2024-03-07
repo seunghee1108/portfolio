@@ -6,12 +6,15 @@
 
 .box1 {
   height: 100vh;
-  background-color: #B5C0D0;
+  // background-color: #B5C0D0;
+
+  background: linear-gradient(135deg, #E0E0E0 0%, #F5F5F5 30%, #FFFFFF 70%, #F5F5F5 100%);
+
 }
 
 .box2 {
   height: 100vh;
-  background-color: #CCD3CA;
+  background: linear-gradient(135deg, #F0F0F0 0%, #E8E8E8 50%, #FFFFFF 70%, #E8E8E8 100%);
   display: flex;
   flex-direction: row;
   // justify-content: center;
@@ -20,7 +23,10 @@
 
 .box3 {
   height: 100vh;
-  background-color: #F5E8DD;
+  // background-color: #E0E0E0;
+  // background: linear-gradient(135deg, #F0F0F0 0%, #E8E8E8 50%, #FFFFFF 70%, #E8E8E8 100%);
+  background-color: #F5F5F5;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +36,8 @@
 
 .box4 {
   height: 100vh;
-  background-color: #EED3D9;
+  background-color: linear-gradient(135deg, #E0E0E0 0%, #F5F5F5 30%, #FFFFFF 70%, #F5F5F5 100%);
+  // background: linear-gradient(0deg, #ffffff 0%, #dfffd847 60%, #b5f1ccde 100%);    background: linear-gradient(0deg, #ffffff 0%, #dfffd847 60%, #b5f1ccde 100%);
   display: flex;
   // flex-wrap: wrap;
   justify-content: center;
@@ -39,7 +46,7 @@
 
 .box5 {
   height: 100vh;
-  background-color: #CCD3CA;
+  background-color: #FFFFFF;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -86,7 +93,7 @@
   margin-left: 5vw;
   width: 40vw;
   height: 50vh;
-  background-color: cadetblue;
+  // background-color: cadetblue;
 }
 
 .project {
@@ -98,14 +105,15 @@
 
 .project>div {
   width: 20vw;
-  height: 50vh;
-  background-color: azure;
+  height: 55vh;
+  background-color: #EEEEEE;
   // margin-right: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 3vw;
+  border-radius: 5px;
 }
 
 .fontBox {
@@ -144,6 +152,8 @@
 .project img {
   width: 18vw;
   height: 23vh;
+
+  border-radius: 5px;
   margin-top: 3vh;
   //   display: flex;
   //   justify-content: center;
@@ -153,26 +163,30 @@
 
 .fontContent {
   width: 18vw;
-  align-items: flex-start; /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+  align-items: flex-start;
+  /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
   display: flex;
-  flex-direction: column; /* 아이템들을 세로로 배치합니다. */
+  flex-direction: column;
+  /* 아이템들을 세로로 배치합니다. */
 }
 
 .fontContent p {
-  text-align: left; /* 텍스트를 왼쪽으로 정렬합니다. */
+  text-align: left;
+  /* 텍스트를 왼쪽으로 정렬합니다. */
 }
 
 .fontContent h4 {
   font-size: 1.1em;
 
-  text-align: left; /* 텍스트를 왼쪽으로 정렬합니다. */
+  text-align: left;
+  /* 텍스트를 왼쪽으로 정렬합니다. */
 }
 
 .projectContent {
   margin-top: 20vh;
   width: 70vw;
   height: 70vh;
-  background-color: #B5C0D0;
+  // background-color: #DDDDDD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +201,7 @@
   // align-items: start;
   // justify-content: start;
   flex-direction: column;
-  background-color: aqua;
+  // background-color: aqua;
 }
 
 
@@ -205,6 +219,19 @@
   margin-top: 3vh;
 }
 
+.contentImage h4 {
+
+  margin-bottom: 5px;
+  background-color: #DDDDDD;
+  /* 배경색을 원하는 색상으로 지정합니다. */
+  padding: 5px 10px;
+  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+  display: inline-block;
+  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+  // margin-top: 1vw;
+  border-radius: 5px;
+  /* 둥근 모서리를 적용합니다. */
+}
 
 .contentImage div p {
   padding-bottom: 10px;
@@ -213,7 +240,7 @@
 .contentBox {
   width: 30vw;
   height: 60vh;
-  background-color: aquamarine;
+  // background-color: aquamarine;
 }
 
 .contentBox {
@@ -221,4 +248,41 @@
     padding: 2vh;
     color: #333;
   }
+}
+
+
+.contentBox h4 {
+  background-color:#DDDDDD;
+  /* 배경색을 원하는 색상으로 지정합니다. */
+  padding: 5px 10px;
+  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+  margin-bottom: 5px;
+
+  display: inline-block;
+  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+  border-radius: 5px;
+  /* 둥근 모서리를 적용합니다. */
+}
+
+.fontContent h4 {
+  background-color: #DDDDDD;
+  padding: 5px 10px;
+  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+  margin-bottom: 5px;
+  display: inline-block;
+  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+  border-radius: 5px;
+  /* 둥근 모서리를 적용합니다. */
+}
+
+.stackBox {
+  // width: 30vw;
+  height: 10vw;
+  margin-top: 3vh;
+  text-align: left;
+  width: 18vw;
+  align-items: flex-start;
+  /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+  display: flex;
+  flex-direction: column;
 }

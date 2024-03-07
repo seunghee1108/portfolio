@@ -4,8 +4,8 @@
   opacity: 0/5;
   display: flex;
   justify-content: space-between;
-  color: #365486;
-  background-color: #b6c4b610;
+  color: white;
+  background-color: #202020;
   // background-color: white;
   max-width: 100%;
   position: fixed;
@@ -33,14 +33,14 @@
   font-family: 'Acme', sans-serif;
 
   a {
-    text-shadow: 0 0 5px #DCF2F1;
-    color:#365486;
+    // text-shadow: 0 0 5px #DCF2F1;
+    color:white;
     text-decoration-line: none;
     margin-left: 5vw;
 
-    &:hover {
-      text-shadow: 0 0 .1em, 0 0 .3em;/* 텍스트에 빛 효과 추가 */
-    }
+    // &:hover {
+      // text-shadow: 0 0 .1em, 0 0 .3em;/* 텍스트에 빛 효과 추가 */
+    // }
   }
 }
 
@@ -72,16 +72,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#EEF5FF;
-    color: #365486;
+    // background-color:#EEF5FF;
+    color: white;
     cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
     border: 0;
 
     &:hover {
-      background-color: #F1EFEF;
-      color: #18271d;
+      // background-color: #F1EFEF;
+      color: #00FF85;
     }
   }
 }

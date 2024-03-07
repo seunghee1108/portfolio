@@ -49,7 +49,7 @@ function Index() {
 
       {/* ABOUT */}
       <div ref={box1Ref} className={`${styles.div} ${styles.box1}`}></div>
-
+     
       {/* SKILL */}
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
         <div className={styles.skillBox}>
