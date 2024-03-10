@@ -33,12 +33,13 @@
 }
 
 .box2 {
+  width: 100vw;
   height: 100vh;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .box3 {
@@ -73,43 +74,48 @@
   /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
 }
 
-.skillItem {
-  margin-right: 20px; // 스킬 아이템들 간의 간격 설정
-}
-
-.skillBox img {
-  width: 3vw;
-  height: 5vh;
-  margin: 10px;
-}
-
-.skillBox {
-  display: flex;
-  margin-top: 10vh;
-  margin-left: 10vw;
-  padding: 5vw;
-  justify-content: space-around;
-  align-items: 'flex-start';
-  flex-direction: column;
-}
 
 .backend,
 .frontend,
 .tools {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 3vh;
-  /* 각 카테고리 사이의 간격 조정 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* 요소 사이의 간격을 최대한 넓힘 */
 }
 
-.skillContent {
-  margin-top: 30vh;
-  margin-left: 5vw;
-  width: 40vw;
-  height: 50vh;
-  // background-color: cadetblue;
+.skillItem {
+  text-align: center; 
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  display: flex; /* 부모 요소를 flex로 설정합니다. */
+  justify-content: center; 
 }
+
+.skillItem img {
+  width: 3vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  max-width: 100%;
+  // margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillBox {
+  width: 15vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // align-items: flex-start;
+  padding: 2vw;
+  margin: 3vw;
+  background-color: #DDDDDD;
+}
+
+
 
 .project {
   display: flex;
@@ -346,7 +352,8 @@
   align-items: start;
   flex-direction: column;
 }
-.fontBoxTwo p{
+
+.fontBoxTwo p {
   margin-top: 1vw;
   font-size: 1.1rem;
   font-family: 'Pretendard-ExtraLight';
