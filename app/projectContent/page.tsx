@@ -27,7 +27,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
         "게시판 프로젝트를 진행하면서 MongoDB에 대한 이해를 높일 수 있었습니다. MongoDB를 선택한 이유는 NoSQL의 유연성과 스키마의 제한이 없는 특성때문입니다. 이를 통해 로그인 정보나 글 작성과 같은 데이터를 효율적으로 저장하고 빠르게 데이터를 처리할 수 있었습니다. 사용자가 글을 작성하고 댓글을 나눌 수 있는 공간을 만들어가는 과정이 특히 흥미로웠습니다. 또한, 추가적인 기능을 도입하고 사용자 경험을 향상시키며 프로젝트를 발전해 나갈 것입니다.",
       technology: "JavaScript, Node.js, Express, MongoDB, EJS, CSS",
     },
-    TOURMAPS: {   
+    TOURMAPS: {
       number: "02",
       description:
         "공공데이터포털에서 제공하는 API 엔드포인트를 활용하여 제작한 프로젝트입니다. 여행을 즐기는 사람으로서 여행 계획을 세우는 과정에서 어려움을 겪었습니다. 어느 지역을 방문해야 하는지, 어떤 코스를 따라야 하는지 결정하는 것이 쉽지 않았습니다. 이런 불편함을 해결하고자 여행 계획을 더 간편하고 편리하게 세울 수 있는 웹서비스를 개발하게 되었습니다.",
@@ -63,9 +63,10 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
       </div>
 
       <div className={styles.contentBox}>
-        <p>{selectedProjectInfo.number}</p>
-        <br />
-        <h1>{project}</h1>
+        <div>
+          <p>{selectedProjectInfo.number}</p>
+          <h1>{project}</h1>
+        </div>
 
         <div>
           <h4>프로젝트 설명</h4>
@@ -89,7 +90,6 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               {selectedProjectInfo.link}
             </a>
             <br />
-
           </p>
 
           <h4>깃허브 링크</h4>
