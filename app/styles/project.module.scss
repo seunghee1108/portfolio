@@ -122,127 +122,61 @@
   /* h2와 p 사이의 간격을 조정합니다. */
 }
 
-// .project p {
-//   width: 100%;
-//   /* div의 전체 너비를 차지하도록 설정합니다. */
-//   margin-top: 10px;
-//   /* 이미지와의 간격을 조정합니다. */
-//   margin-left: 2vw;
-//   align-items: center;
-//   display: flex;
-// }
 
 .project img {
   width: 33vw;
   height: 60vh;
+
 
   border-radius: 5px;
   //   display: flex;
   //   justify-content: center;
   //   align-items: center;
   //     flex-wrap: wrap;
+
+  transition: filter 0.3s ease; /* 효과를 부드럽게 적용하기 위한 transition 설정 */
 }
 
-.fontContent {
-  width: 18vw;
-  align-items: flex-start;
-  /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
-  display: flex;
-  flex-direction: column;
-  /* 아이템들을 세로로 배치합니다. */
+.project img:hover {
+  filter: blur(10px); /* 이미지에 블러 효과 적용 */
 }
 
-.fontContent p {
-  text-align: left;
-  /* 텍스트를 왼쪽으로 정렬합니다. */
+.imageContainer{
+  position: relative;
 }
 
-.fontContent h4 {
-  font-size: 1.1em;
+.caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 텍스트를 중앙 정렬하기 위한 transform */
+  font-size: 16px; /* 텍스트 크기 설정 */
+  color: black; /* 텍스트 색상 설정 */
+  opacity: 0; /* 초기에는 숨김 상태로 설정 */
+  transition: opacity 0.3s ease; /* 효과를 부드럽게 적용하기 위한 transition 설정 */
+  letter-spacing: 2px; /* 글자 간격을 2px로 설정합니다. */
 
-  text-align: left;
-  /* 텍스트를 왼쪽으로 정렬합니다. */
 }
-
-.projectContent {
-  margin-top: 20vh;
-  width: 70vw;
-  height: 70vh;
-  // background-color: #DDDDDD;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 7vw;
-  // padding: 3vw;
-}
-
-.contentImage {
-  width: 30vw;
-  height: 60vh;
-  display: flex;
-  // align-items: start;
-  // justify-content: start;
-  flex-direction: column;
-  // background-color: aqua;
+.imageContainer:hover img {
+  filter: blur(10px); /* 이미지에 마우스 호버 시 블러 효과 적용 */
 }
 
 
-.contentImage img {
-  width: 25vw;
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.imageContainer:hover .caption  {
+  opacity: 1; /* 이미지에 호버할 때 텍스트가 나타나도록 설정 */
+  cursor: default;
 }
 
-.contentImage div {
-  width: 25vw;
-  height: auto;
-  margin-top: 3vh;
+.caption p {
+  margin-bottom: 3vw; /* 문단 사이의 간격을 설정합니다. */
+  // cursor: pointer;
+
 }
 
-.contentImage h4 {
-
-  margin-bottom: 5px;
-  background-color: #DDDDDD;
-  /* 배경색을 원하는 색상으로 지정합니다. */
-  padding: 5px 10px;
-  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
-  display: inline-block;
-  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
-  // margin-top: 1vw;
-  border-radius: 5px;
-  /* 둥근 모서리를 적용합니다. */
+.caption h1 {
+  margin-bottom: 2vw; /* 제목과 다음 요소 사이의 간격을 조정합니다. */
 }
 
-.contentImage div p {
-  padding-bottom: 10px;
+.caption:hover img {
+  filter: blur(10px); /* 텍스트에 마우스를 올렸을 때 이미지의 블러 효과가 유지됩니다. */
 }
-
-.contentBox {
-  width: 30vw;
-  height: 60vh;
-  // background-color: aquamarine;
-}
-
-.contentBox {
-  div {
-    padding: 2vh;
-    color: #333;
-  }
-}
-
-
-.contentBox h4 {
-  background-color: #DDDDDD;
-  /* 배경색을 원하는 색상으로 지정합니다. */
-  padding: 5px 10px;
-  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
-  margin-bottom: 5px;
-
-  display: inline-block;
-  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
-  border-radius: 5px;
-  /* 둥근 모서리를 적용합니다. */
-}
-
