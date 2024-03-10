@@ -5,7 +5,7 @@ import React from "react";
 import styles from "@/app/styles/topbar.module.scss";
 import Link from "next/link";
 
-function Topbar({ box1Ref, box2Ref, box3Ref, box4Ref, box5Ref}) {
+function Topbar({ box1Ref, box2Ref, box3Ref}) {
   const scrollToRef = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
@@ -27,10 +27,6 @@ function Topbar({ box1Ref, box2Ref, box3Ref, box4Ref, box5Ref}) {
         </a>
         <a className={styles.link} onClick={() => scrollToRef(box3Ref)}>
           PROJECT
-        </a>
-        
-        <a className={styles.link} onClick={() => scrollToRef(box5Ref)}>
-          CONTACT
         </a>
       </div>
     </div>
