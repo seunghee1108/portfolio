@@ -14,7 +14,7 @@ function Index() {
   const box2Ref = useRef(null);
   const box3Ref = useRef(null);
   const box4Ref = useRef(null);
-  const box5Ref = useRef(null);
+  // const box5Ref = useRef(null);
 
   const handleSkillClick = (description: string) => {
     setSkillDescription(description);
@@ -43,7 +43,7 @@ function Index() {
           box2Ref={box2Ref}
           box3Ref={box3Ref}
           box4Ref={box4Ref}
-          box5Ref={box5Ref}
+          // box5Ref={box5Ref}
         />
       </div>
 
@@ -126,6 +126,8 @@ function Index() {
   </div>
 </div>
 
+
+
       {/* PROJECT */}
       <div
         ref={box3Ref}
@@ -145,9 +147,9 @@ function Index() {
       </div>
 
       {/* CONTACT */}
-      <div ref={box5Ref} className={`${styles.div} ${styles.box5}`}>
+      {/* <div ref={box5Ref} className={`${styles.div} ${styles.box5}`}>
         <div className={styles.contact}>Contact</div>
-      </div>
+      </div> */}
     </div>
   );
 }
