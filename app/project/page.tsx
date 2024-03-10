@@ -14,7 +14,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
   return (
     <div className={styles.project}>
       <div className={styles.imageContainer}>
-        <img src="/list.png" alt="BOARD" onClick={(e) => e.stopPropagation()} />
+        <img src="/board.png" alt="BOARD" onClick={(e) => e.stopPropagation()} />
         <div className={styles.caption}>
           <p>01</p>
           <h1>BOARD</h1>
@@ -43,7 +43,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
 
       <div className={styles.imageContainer}>
         <img
-          src="/erp.png"
+          src="/erp-project.png"
           alt="ERPPROJECT"
           onClick={(e) => e.stopPropagation()}
         />
