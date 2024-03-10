@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('/fonts/Pretendard-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('/fonts/Pretendard-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraLight';
+  src: url('/fonts/Pretendard-ExtraLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -11,6 +34,7 @@
 
 .box2 {
   height: 100vh;
+  background-color: #ffffff; 
   display: flex;
   flex-direction: row;
   // justify-content: center;
@@ -289,8 +313,27 @@
 
 }
 
+.aboutBoxTwo {
+  width: 100vw;
+  height: 40vh;
+  // background-color: #DDDDDD;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.aboutBoxTwo p {
+  padding: 1.5vh;
+  font-size: 1.3rem;
+  color: #333333;
+  font-family: 'Pretendard-Light';
+}
+
 .aboutBox img {
-  width: 15vw;
+  width: 13vw;
   height: 30vh;
   margin-left: 25vw;
 }
@@ -303,10 +346,19 @@
   align-items: start;
   flex-direction: column;
 }
+.fontBoxTwo p{
+  margin-top: 1vw;
+  font-size: 1.1rem;
+  font-family: 'Pretendard-ExtraLight';
+  color: #777777;
+
+}
 
 .fontBox div p {
   margin-top: 1vw;
   font-size: 1.1rem;
+  font-family: 'Pretendard-ExtraLight';
+  // color: #777777;
 }
 
 .fontBox p,
@@ -334,14 +386,17 @@
   border-radius: 30px;
   background-color: #0433ff;
   color: white;
+  font-family: 'Pretendard-ExtraLight';
   padding: 0 10px;
 
 }
 
 .fontBox h1 {
   font-size: 3rem;
+  font-family: 'Pretendard-Bold';
 }
 
 .fontBox p {
   font-size: 2rem;
+  font-family: 'Pretendard-Light';
 }
