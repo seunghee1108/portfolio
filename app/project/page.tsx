@@ -7,17 +7,54 @@ interface ProjectPageProps {
 }
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
+  const handleDetailClick = (project: string) => {
+    handleProjectClick(project);
+  };
+
   return (
     <div className={styles.project}>
-      <div className={styles.imageContainer}  onClick={() => handleProjectClick("BOARD")}>
-        <img src="/list.png" alt="BOARD" />
-        <div className={styles.caption}>안녕</div>
+      <div className={styles.imageContainer}>
+        <img src="/list.png" alt="BOARD" onClick={(e) => e.stopPropagation()} />
+        <div className={styles.caption}>
+          <p>01</p>
+          <h1>BOARD</h1>
+          <p>Solo project</p>
+          <a href="#box4" onClick={() => handleDetailClick("BOARD")}>
+            자세히 보기
+          </a>
+        </div>
       </div>
-      <div onClick={() => handleProjectClick("TOURMAPS")}>
-        <img src="/tourmaps.png" alt="TOURMAPS" />
+
+      <div className={styles.imageContainer}>
+        <img
+          src="/tourmaps.png"
+          alt="TOURMAPS"
+          onClick={(e) => e.stopPropagation()}
+        />
+        <div className={styles.caption}>
+          <p>02</p>
+          <h1>TOURMAPS</h1>
+          <p>Solo project</p>
+          <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")}>
+            자세히 보기
+          </a>
+        </div>
       </div>
-      <div onClick={() => handleProjectClick("ERP-PROJECT")}>
-        <img src="/erp.png" alt="ERPPROJECT" />
+
+      <div className={styles.imageContainer}>
+        <img
+          src="/erp.png"
+          alt="ERPPROJECT"
+          onClick={(e) => e.stopPropagation()}
+        />
+        <div className={styles.caption}>
+          <p>03</p>
+          <h1>ERP-PROJECT</h1>
+          <p>Team project</p>
+          <a href="#box4" onClick={() => handleDetailClick("ERP-PROJECT")}>
+            자세히 보기
+          </a>
+        </div>
       </div>
     </div>
   );
