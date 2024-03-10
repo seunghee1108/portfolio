@@ -20,7 +20,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h1>BOARD</h1>
           <p>Solo project</p>
           <a href="#box4" onClick={() => handleDetailClick("BOARD")}>
-            자세히 보기
+            자세히 보기 &gt;
           </a>
         </div>
       </div>
@@ -36,7 +36,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h1>TOURMAPS</h1>
           <p>Solo project</p>
           <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")}>
-            자세히 보기
+            자세히 보기 &gt; 
           </a>
         </div>
       </div>
@@ -52,7 +52,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h1>ERP-PROJECT</h1>
           <p>Team project</p>
           <a href="#box4" onClick={() => handleDetailClick("ERP-PROJECT")}>
-            자세히 보기
+            자세히 보기 &gt; 
           </a>
         </div>
       </div>
