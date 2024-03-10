@@ -180,3 +180,14 @@
 .caption:hover img {
   filter: blur(10px); /* 텍스트에 마우스를 올렸을 때 이미지의 블러 효과가 유지됩니다. */
 }
+
+.caption a {
+  color: #000; /* 기본 텍스트 색상 */
+  text-decoration: none; /* 기본 링크 밑줄 제거 */
+  transition: color 0.3s ease; /* 색상 변화에 애니메이션 적용 */
+}
+
+.caption a:hover {
+  color: #0433ff; /* 호버 시 색상 변경 */
+  text-decoration: underline; /* 호버 시 밑줄 생성 */
+}
