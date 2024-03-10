@@ -82,11 +82,39 @@ function Index() {
         </div>
       </div>
 
-      {/* SKILL */}
+{/* SKILL */}
 <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
   <div className={styles.skillBox}>
     <div className={styles.backend}>
-      {skillsData.map((skill: SkillData, index: number) => (
+      {skillsData.slice(0, 5).map((skill: SkillData, index: number) => (
+        <div key={index} className={styles.skillItem}>
+          <img
+            src={skill.src}
+            alt={skill.alt}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+
+{/* 두 번째 섹션 */}
+  <div className={styles.skillBox}>
+    <div className={styles.tools}>
+      {skillsData.slice(5, 10).map((skill: SkillData, index: number) => (
+        <div key={index} className={styles.skillItem}>
+          <img
+            src={skill.src}
+            alt={skill.alt}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+
+{/* 세 번째 섹션 */}
+  <div className={styles.skillBox}>
+    <div className={styles.frontend}>
+      {skillsData.slice(10, 15).map((skill: SkillData, index: number) => (
         <div key={index} className={styles.skillItem}>
           <img
             src={skill.src}
@@ -97,7 +125,6 @@ function Index() {
     </div>
   </div>
 </div>
-
 
       {/* PROJECT */}
       <div
