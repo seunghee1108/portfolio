@@ -9,8 +9,9 @@ interface ProjectPageProps {
 const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
   return (
     <div className={styles.project}>
-      <div onClick={() => handleProjectClick("BOARD")}>
+      <div className={styles.imageContainer}  onClick={() => handleProjectClick("BOARD")}>
         <img src="/list.png" alt="BOARD" />
+        <div className={styles.caption}>안녕</div>
       </div>
       <div onClick={() => handleProjectClick("TOURMAPS")}>
         <img src="/tourmaps.png" alt="TOURMAPS" />
