@@ -83,26 +83,21 @@ function Index() {
       </div>
 
       {/* SKILL */}
-      <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
-        <div className={styles.skillBox}>
-          <div className={styles.backend}>
-            {skillsData.map((skill: SkillData, index: number) => (
-              <div key={index} className={styles.skillItem}>
-                <img
-                  src={skill.src}
-                  alt={skill.alt}
-                  onClick={() => handleSkillClick(skill.description)}
-                />
-              </div>
-            ))}
-          </div>
-          <div className={styles.skillContent}>
-            {skillDescription && (
-              <div className={styles.skillDescription}>{skillDescription}</div>
-            )}
-          </div>
+<div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
+  <div className={styles.skillBox}>
+    <div className={styles.backend}>
+      {skillsData.map((skill: SkillData, index: number) => (
+        <div key={index} className={styles.skillItem}>
+          <img
+            src={skill.src}
+            alt={skill.alt}
+          />
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+
 
       {/* PROJECT */}
       <div
