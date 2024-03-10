@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('/fonts/Pretendard-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('/fonts/Pretendard-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraLight';
+  src: url('/fonts/Pretendard-ExtraLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.box1 {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.box2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   flex-wrap: wrap;
+}
+
+
+.box4 {
+  height: 100vh;
+  display: flex;
+  // flex-wrap: wrap;
+  background-color: #ffffff;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.box5 {
+  height: 100vh;
+  background-color: #FFFFFF;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.contact {
+  font-size: 2rem;
+
+  color: white;
+  /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
+}
+
+
+
+.project {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+
+  // margin: 3vw;
+}
+
+
+.project>div {
+  width: 33vw;
+  height: 60vh;
+  background-color: #EEEEEE;
+  // margin-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fontBox {
+  width: 100%;
+  /* div의 전체 너비를 차지하도록 설정합니다. */
+  margin-top: 10px;
+  /* 이미지와의 간격을 조정합니다. */
+  margin-left: 2vw;
+  align-items: center;
+  display: flex;
+
+}
+
+.project div h2 {
+  font-size: 1.5em;
+  /* h2의 글꼴 크기를 조정합니다. */
+}
+
+.project div h3 {
+  font-size: 1.1em;
+  /* p의 글꼴 크기를 조정합니다. */
+  margin: 13px;
+  /* h2와 p 사이의 간격을 조정합니다. */
+}
+
+// .project p {
+//   width: 100%;
+//   /* div의 전체 너비를 차지하도록 설정합니다. */
+//   margin-top: 10px;
+//   /* 이미지와의 간격을 조정합니다. */
+//   margin-left: 2vw;
+//   align-items: center;
+//   display: flex;
+// }
+
+.project img {
+  width: 33vw;
+  height: 60vh;
+
+  border-radius: 5px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //     flex-wrap: wrap;
+}
+
+.fontContent {
+  width: 18vw;
+  align-items: flex-start;
+  /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+  display: flex;
+  flex-direction: column;
+  /* 아이템들을 세로로 배치합니다. */
+}
+
+.fontContent p {
+  text-align: left;
+  /* 텍스트를 왼쪽으로 정렬합니다. */
+}
+
+.fontContent h4 {
+  font-size: 1.1em;
+
+  text-align: left;
+  /* 텍스트를 왼쪽으로 정렬합니다. */
+}
+
+.projectContent {
+  margin-top: 20vh;
+  width: 70vw;
+  height: 70vh;
+  // background-color: #DDDDDD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7vw;
+  // padding: 3vw;
+}
+
+.contentImage {
+  width: 30vw;
+  height: 60vh;
+  display: flex;
+  // align-items: start;
+  // justify-content: start;
+  flex-direction: column;
+  // background-color: aqua;
+}
+
+
+.contentImage img {
+  width: 25vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentImage div {
+  width: 25vw;
+  height: auto;
+  margin-top: 3vh;
+}
+
+.contentImage h4 {
+
+  margin-bottom: 5px;
+  background-color: #DDDDDD;
+  /* 배경색을 원하는 색상으로 지정합니다. */
+  padding: 5px 10px;
+  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+  display: inline-block;
+  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+  // margin-top: 1vw;
+  border-radius: 5px;
+  /* 둥근 모서리를 적용합니다. */
+}
+
+.contentImage div p {
+  padding-bottom: 10px;
+}
+
+.contentBox {
+  width: 30vw;
+  height: 60vh;
+  // background-color: aquamarine;
+}
+
+.contentBox {
+  div {
+    padding: 2vh;
+    color: #333;
+  }
+}
+
+
+.contentBox h4 {
+  background-color: #DDDDDD;
+  /* 배경색을 원하는 색상으로 지정합니다. */
+  padding: 5px 10px;
+  /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+  margin-bottom: 5px;
+
+  display: inline-block;
+  /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+  border-radius: 5px;
+  /* 둥근 모서리를 적용합니다. */
+}
+
