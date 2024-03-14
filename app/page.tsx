@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useRef, useState } from "react";
@@ -42,7 +43,7 @@ function Index() {
           box1Ref={box1Ref}
           box2Ref={box2Ref}
           box3Ref={box3Ref}
-          box4Ref={box4Ref}
+          box1Ref={box4Ref}
           // box5Ref={box5Ref}
         />
       </div>
@@ -84,7 +85,11 @@ function Index() {
 
 {/* SKILL */}
 <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
+<div className={styles.stackBox}>
+              <p>FULL STACK</p>
+            </div>
   <div className={styles.skillBox}>
+    
     <div className={styles.backend}>
       {skillsData.slice(0, 5).map((skill: SkillData, index: number) => (
         <div key={index} className={styles.skillItem}>
@@ -98,6 +103,9 @@ function Index() {
   </div>
 
 {/* 두 번째 섹션 */}
+<div className={styles.stackBox}>
+              <p>FULL STACK</p>
+            </div>
   <div className={styles.skillBox}>
     <div className={styles.tools}>
       {skillsData.slice(5, 10).map((skill: SkillData, index: number) => (
@@ -112,6 +120,9 @@ function Index() {
   </div>
 
 {/* 세 번째 섹션 */}
+<div className={styles.stackBox}>
+              <p>FULL STACK</p>
+            </div>
   <div className={styles.skillBox}>
     <div className={styles.frontend}>
       {skillsData.slice(10, 15).map((skill: SkillData, index: number) => (
