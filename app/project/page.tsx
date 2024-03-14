@@ -15,7 +15,11 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
   return (
     <div className={styles.project}>
       <div className={styles.imageContainer}>
-        <img src="/board.png" alt="BOARD" onClick={(e) => e.stopPropagation()} />
+        <img
+          src="/boardmain.png"
+          alt="BOARD"
+          onClick={(e) => e.stopPropagation()}
+        />
         <div className={styles.caption}>
           <p>01</p>
           <h1>BOARD</h1>
@@ -28,7 +32,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
 
       <div className={styles.imageContainer}>
         <img
-          src="/tourmaps.png"
+          src="/tourmapsmain.png"
           alt="TOURMAPS"
           onClick={(e) => e.stopPropagation()}
         />
@@ -37,14 +41,14 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h1>TOURMAPS</h1>
           <p>Solo project</p>
           <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")}>
-            자세히 보기 &gt; 
+            자세히 보기 &gt;
           </a>
         </div>
       </div>
 
       <div className={styles.imageContainer}>
         <img
-          src="/erp-project.png"
+          src="/erp.png"
           alt="ERPPROJECT"
           onClick={(e) => e.stopPropagation()}
         />
@@ -53,7 +57,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
           <h1>ERP-PROJECT</h1>
           <p>Team project</p>
           <a href="#box4" onClick={() => handleDetailClick("ERP-PROJECT")}>
-            자세히 보기 &gt; 
+            자세히 보기 &gt;
           </a>
         </div>
       </div>
