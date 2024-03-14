@@ -4,7 +4,12 @@
 import React, { useRef, useState } from "react";
 import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
-import {backendSkills, frontendSkills, toolSkills } from "./skill/page";
+import {
+  backendSkills,
+  frontendSkills,
+  toolSkills,
+  SkillData,
+} from "./skill/page";
 import ProjectPage from "./project/page";
 import ProjectDetails from "./projectContent/page";
 
@@ -73,9 +78,23 @@ function Index() {
         </div>
         <div className={styles.aboutBoxTwo}>
           <p>010-6354-8982</p>
-          <p>이메일</p>
-          <p>깃허브</p>
-          <p>Notion</p>
+          <div>
+            <p>
+              <a href="mailto:bangseunghee1108@gmail.com">
+                bangseunghee1108@gmail.com
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/seunghee1108">
+                https://github.com/seunghee1108
+              </a>
+            </p>
+            <p>
+              <a href="https://shelled-nylon-975.notion.site/d46563d5bec54dff964c4bf2f97cfb94?pvs=4">
+                Notion
+              </a>
+            </p>
+          </div>
 
           <div></div>
         </div>
@@ -83,55 +102,58 @@ function Index() {
 
       {/* SKILL */}
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
-  {/* 백엔드 섹션 */}
-  <div>
-    <div className={styles.stackBoxx}>
-      <p>BACK-END</p>
-    </div>
-    <div className={styles.skillBox}>
-      <div className={styles.backend}>
-        {backendSkills.map((skill: SkillData, index: number) => (
-          <div key={index} className={styles.skillItem}>
-            <img src={skill.src} alt={skill.alt} />
+        {/* 백엔드 섹션 */}
+        <div>
+          <div className={styles.stackBoxx}>
+            <p>BACK-END</p>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-
-  {/* 프론트엔드 섹션 */}
-  <div>
-    <div className={styles.stackBoxxx}>
-      <p>FRONT-END</p>
-    </div>
-    <div className={styles.skillBox}>
-      <div className={styles.frontend}>
-        {frontendSkills.map((skill: SkillData, index: number) => (
-          <div key={index} className={styles.skillItem}>
-            <img src={skill.src} alt={skill.alt} />
+          <div className={styles.skillBox}>
+            <div className={styles.backend}>
+              {backendSkills.map((skill: SkillData, index: number) => (
+                <div key={index} className={styles.skillItem}>
+                  <img
+                    src={skill.src}
+                    alt={skill.alt}
+                    className={styles.skillImage}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
+        </div>
 
-  {/* 도구 섹션 */}
-  <div>
-    <div className={styles.stackBoxx}>
-      <p>TOOLS</p>
-    </div>
-    <div className={styles.skillBox}>
-      <div className={styles.tools}>
-        {toolSkills.map((skill: SkillData, index: number) => (
-          <div key={index} className={styles.skillItem}>
-            <img src={skill.src} alt={skill.alt} />
+        {/* 프론트엔드 섹션 */}
+        <div>
+          <div className={styles.stackBoxxx}>
+            <p>FRONT-END</p>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
+          <div className={styles.skillBox}>
+            <div className={styles.frontend}>
+              {frontendSkills.map((skill: SkillData, index: number) => (
+                <div key={index} className={styles.skillItem}>
+                  <img src={skill.src} alt={skill.alt} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
+        {/* 도구 섹션 */}
+        <div>
+          <div className={styles.stackBoxx}>
+            <p>TOOLS</p>
+          </div>
+          <div className={styles.skillBox}>
+            <div className={styles.tools}>
+              {toolSkills.map((skill: SkillData, index: number) => (
+                <div key={index} className={styles.skillItem}>
+                  <img src={skill.src} alt={skill.alt} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* PROJECT */}
       <div
