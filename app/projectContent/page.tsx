@@ -58,6 +58,20 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 
   return (
     <div className={styles.projectContent}>
+
+{/* <div className={styles.video}>
+  {project === "BOARD" && (
+    <img src="/board2.gif" alt="BOARD GIF" />
+  )}
+  {project === "TOURMAPS" && (
+    <img src="투어맵 프로젝트 GIF 파일 경로" alt="TOURMAPS GIF" />
+  )}
+  {project === "ERP-PROJECT" && (
+    <img src="ERP 프로젝트 GIF 파일 경로" alt="ERP-PROJECT GIF" />
+  )}
+</div> */}
+
+
       <div className={styles.contentImage}>
         {project && <img src={`/${project.toLowerCase()}.png`} alt={project} />}
       </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "@/app/styles/project.module.scss";
 
+// 수정된 타입 정의
 interface ProjectPageProps {
   handleProjectClick: (project: string) => void;
 }
