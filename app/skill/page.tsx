@@ -21,29 +21,34 @@ const skillsData: SkillData[] = [
   { src: "/Node.js.png", alt: "Node.js" },
   { src: "/GitHub.png", alt: "Github" },
 ];
-const backendSkills = skillsData.filter(skill =>
-  skill.alt.toLowerCase().includes("node.js") ||
-  skill.alt.toLowerCase().includes("javascript") ||
-  skill.alt.toLowerCase().includes("typescript") ||
-  skill.alt.toLowerCase().includes("aws")
+const backendSkills = [
+  "Node.js",
+  "JavaScript",
+  "TypeScript",
+  "AWS"
+].flatMap(skill =>
+  skillsData.filter(data => data.alt === skill)
 );
 
-// 프론트엔드 스킬 필터링
-const frontendSkills = skillsData.filter(skill =>
-  skill.alt.toLowerCase().includes("html") ||
-  skill.alt.toLowerCase().includes("react") ||
-  skill.alt.toLowerCase().includes("next.js") ||
-  skill.alt.toLowerCase().includes("css") ||
-  skill.alt.toLowerCase().includes("tailwind")
+const frontendSkills = [
+  "HTML",
+  "CSS",
+  "React",
+  "Tailwind CSS",
+  "Next.js"
+].flatMap(skill =>
+  skillsData.filter(data => data.alt === skill)
 );
 
-// 도구 스킬 필터링
-const toolSkills = skillsData.filter(skill =>
-  skill.alt.toLowerCase().includes("github") ||
-  skill.alt.toLowerCase().includes("vscode") ||
-  skill.alt.toLowerCase().includes("notion") ||
-  skill.alt.toLowerCase().includes("slack") ||
-  skill.alt.toLowerCase().includes("figma")
+const toolSkills = [
+  "GitHub",
+  "VSCode",
+  "Notion",
+  "Slack",
+  "Figma"
+].flatMap(skill =>
+  skillsData.filter(data => data.alt === skill)
 );
+
 
 export { backendSkills, frontendSkills, toolSkills };
