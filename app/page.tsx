@@ -4,7 +4,7 @@
 import React, { useRef, useState } from "react";
 import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
-import skillsData, { SkillData } from "./skill/page";
+import {backendSkills, frontendSkills, toolSkills } from "./skill/page";
 import ProjectPage from "./project/page";
 import ProjectDetails from "./projectContent/page";
 
@@ -43,7 +43,7 @@ function Index() {
           box1Ref={box1Ref}
           box2Ref={box2Ref}
           box3Ref={box3Ref}
-          box1Ref={box4Ref}
+          box4Ref={box4Ref}
           // box5Ref={box5Ref}
         />
       </div>
@@ -77,66 +77,60 @@ function Index() {
           <p>깃허브</p>
           <p>Notion</p>
 
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </div>
 
-{/* SKILL */}
-<div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
-<div className={styles.stackBox}>
-              <p>FULL STACK</p>
-            </div>
-  <div className={styles.skillBox}>
-    
-    <div className={styles.backend}>
-      {skillsData.slice(0, 5).map((skill: SkillData, index: number) => (
-        <div key={index} className={styles.skillItem}>
-          <img
-            src={skill.src}
-            alt={skill.alt}
-          />
-        </div>
-      ))}
+      {/* SKILL */}
+      <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
+  {/* 백엔드 섹션 */}
+  <div>
+    <div className={styles.stackBoxx}>
+      <p>BACK-END</p>
+    </div>
+    <div className={styles.skillBox}>
+      <div className={styles.backend}>
+        {backendSkills.map((skill: SkillData, index: number) => (
+          <div key={index} className={styles.skillItem}>
+            <img src={skill.src} alt={skill.alt} />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 
-{/* 두 번째 섹션 */}
-<div className={styles.stackBox}>
-              <p>FULL STACK</p>
-            </div>
-  <div className={styles.skillBox}>
-    <div className={styles.tools}>
-      {skillsData.slice(5, 10).map((skill: SkillData, index: number) => (
-        <div key={index} className={styles.skillItem}>
-          <img
-            src={skill.src}
-            alt={skill.alt}
-          />
-        </div>
-      ))}
+  {/* 프론트엔드 섹션 */}
+  <div>
+    <div className={styles.stackBoxxx}>
+      <p>FRONT-END</p>
+    </div>
+    <div className={styles.skillBox}>
+      <div className={styles.frontend}>
+        {frontendSkills.map((skill: SkillData, index: number) => (
+          <div key={index} className={styles.skillItem}>
+            <img src={skill.src} alt={skill.alt} />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 
-{/* 세 번째 섹션 */}
-<div className={styles.stackBox}>
-              <p>FULL STACK</p>
-            </div>
-  <div className={styles.skillBox}>
-    <div className={styles.frontend}>
-      {skillsData.slice(10, 15).map((skill: SkillData, index: number) => (
-        <div key={index} className={styles.skillItem}>
-          <img
-            src={skill.src}
-            alt={skill.alt}
-          />
-        </div>
-      ))}
+  {/* 도구 섹션 */}
+  <div>
+    <div className={styles.stackBoxx}>
+      <p>TOOLS</p>
+    </div>
+    <div className={styles.skillBox}>
+      <div className={styles.tools}>
+        {toolSkills.map((skill: SkillData, index: number) => (
+          <div key={index} className={styles.skillItem}>
+            <img src={skill.src} alt={skill.alt} />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 </div>
-
 
 
       {/* PROJECT */}
