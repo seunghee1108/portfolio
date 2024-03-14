@@ -20,5 +20,27 @@ const skillsData: SkillData[] = [
   { src: "/Figma.png", alt: "Figma", description: "사용자 인터페이스(UI) 및 사용자 경험(UX) 디자인 도구로 팀원과 함께 디자인을 만들고 공유하며 작업했습니다." },
   { src: "/vscode.png", alt: "VSCode", description: "VSCode 대한 설명" },
 ];
+const backendSkills = skillsData.filter(skill =>
+  skill.description.toLowerCase().includes("데이터베이스") ||
+  skill.description.toLowerCase().includes("서버") ||
+  skill.description.toLowerCase().includes("호스팅")
+);
 
-export default skillsData;
+// 프론트엔드 스킬 필터링
+const frontendSkills = skillsData.filter(skill =>
+  skill.description.toLowerCase().includes("html") ||
+  skill.description.toLowerCase().includes("css") ||
+  skill.description.toLowerCase().includes("react") ||
+  skill.description.toLowerCase().includes("tailwind") ||
+  skill.description.toLowerCase().includes("next.js")
+);
+
+// 도구 스킬 필터링
+const toolSkills = skillsData.filter(skill =>
+  skill.description.toLowerCase().includes("notion") ||
+  skill.description.toLowerCase().includes("slack") ||
+  skill.description.toLowerCase().includes("figma") ||
+  skill.description.toLowerCase().includes("vscode")
+);
+
+export { backendSkills, frontendSkills, toolSkills };
