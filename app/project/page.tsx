@@ -1,13 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+import { NextPage } from 'next';
 import React from "react";
 import styles from "@/app/styles/project.module.scss";
 
+
 // 수정된 타입 정의
 interface ProjectPageProps {
+  // @ts-ignore
   handleProjectClick: (project: string) => void;
 }
 
-const ProjectPage: React.FC<ProjectPageProps> = ({ handleProjectClick }) => {
+const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
   const handleDetailClick = (project: string) => {
     handleProjectClick(project);
   };

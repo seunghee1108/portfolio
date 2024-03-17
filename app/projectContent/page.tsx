@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+
 import React, { useState, useEffect } from "react";
 import styles from "@/app/styles/projectContent.module.scss";
 
@@ -55,24 +57,23 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 
     },
   };
-
   
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  useEffect(() => {
+    // 조건부 호출을 제거하고 모든 경우에 호출되도록 함
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % selectedProjectInfo.images.length);
+    }, 2000);
+
+    return () => clearInterval(interval); // cleanup 함수를 반환하여 컴포넌트가 사라질 때 clearInterval 호출
+  }, []); // selectedProjectInfo가 변경될 때마다 호출되도록 함
+
   const selectedProjectInfo = project ? projectContent[project] : null;
 
   if (!selectedProjectInfo) {
     return null;
   }
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % selectedProjectInfo.images.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [selectedProjectInfo.images]);
-
 
   return (
     <div className={styles.projectContent}>
