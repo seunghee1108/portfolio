@@ -62,39 +62,25 @@
   margin: 3vw;
 }
 
-// .project>div {
-//   width: 20vw;
-//   height: 55vh;
-//   background-color: #EEEEEE;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-//   margin: 3vw;
-//   border-radius: 5px;
-// }
-
 .projectContent {
   margin-top: 20vh;
   width: 70vw;
   height: 70vh;
-  // background-color: #DDDDDD;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 7vw;
-  // padding: 3vw;
 }
 
 .contentImage {
-  width: 30vw;
-  height: 70vh;
+  width: 40vw;
+  height: 60vh;
   display: flex;
 }
 
 .contentImage img {
-  width: 27vw;
-  height: 70vh;
+  width:38vw;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,9 +89,8 @@
 
 
 .contentBox {
-  width: 40vw;
-  height: 70vh;
-  // background-color: aqua;
+  width: 25vw;
+  height: 60vh;
 }
 
 .contentImage div {
@@ -114,32 +99,26 @@
   margin-top: 3vh;
 }
 
-// .contentBox h1 {
-  // padding: 5px 10px;
-
-// }
 .contentBox h4 {
   margin-bottom: 2vh;
-  background-color: #DDDDDD;
+  background-color: #F7F7F7; 
+  font-weight: bold;
+  font-size: 1.2rem;
+  // background-color: #DDDDDD;
   padding: 5px 10px;
   display: inline-block;
   border-radius: 5px;
+  margin-top: 1vh;
 }
 
 .contentBox {
   div {
-    padding: 2vh;
+    padding: 1vh;
     color: #333;
   }
   p {
     margin-bottom: 1vh; /* 원하는 만큼의 간격을 설정하세요 */
+    line-height: 1.5; /* 줄간격 조정 */
     
   };
 }
-
-
-.linkBox p  {
-  // padding: 5px 10px;
-
-    margin-bottom: 2vh; /* 원하는 만큼의 간격을 설정하세요 */
-  }

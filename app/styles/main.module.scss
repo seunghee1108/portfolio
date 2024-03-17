@@ -82,22 +82,24 @@
 .tools {
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between; /* 요소 사이의 간격을 최대한 넓힘 */
+  // justify-content: space-between; /* 요소 사이의 간격을 최대한 넓힘 */
 }
 
 .skillItem {
-  text-align: center; 
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-  display: flex; /* 부모 요소를 flex로 설정합니다. */
-  justify-content: center; 
+  // text-align: center; 
+  // width: calc(50% - 10px);
+  // margin-bottom: 1px;
+  display: flex;
+  /* 부모 요소를 flex로 설정합니다. */
+  justify-content: center;
 }
 
 .skillItem img {
-  width: 3vw;
-  height: 5vh;
-  margin-bottom: 10px;
+  width: 12vw;
+  height: 6vh;
+  // margin-bottom: 10px;
   max-width: 100%;
   // margin: auto;
   display: flex;
@@ -106,15 +108,18 @@
 }
 
 .skillBox {
-  width: 15vw;
+  border-radius: 5px;
+
+  width: 17vw;
   height: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   // align-items: flex-start;
-  padding: 2vw;
-  margin: 3vw;
-  background-color: #DDDDDD;
+  padding: 1vw;
+  margin: 2vw;
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -337,6 +342,17 @@
   padding: 1.5vh;
   font-size: 1.3rem;
   color: #333333;
+  text-align: center;
+
+  font-family: 'Pretendard-Light';
+}
+
+
+.aboutBoxTwo a {
+  padding: 1.5vh;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #333333;
   font-family: 'Pretendard-Light';
 }
 
@@ -382,6 +398,83 @@
   height: 5vh;
   //  width: 8vw; /* 너비를 뷰포트 너비의 20%로 조정합니다. */
   // height: 7vh; /* 높이를 뷰포트 높이의 5%로 조정합니다. */
+}
+
+
+.stackBoxx {
+  // width: 30vw;
+  height: 2vh;
+  // margin-top: 3vh;
+  // text-align: center;
+  align-items: center;
+  // justify-content: center;
+  // width: 10vw;
+  width: 17vw;
+  /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+  display: flex;
+  padding: 1vw;
+  margin: 2vw;
+  justify-content: space-around;
+  // flex-direction: column;
+}
+
+
+.stackBoxxx {
+  // width: 30vw;
+  height: 2vh;
+  // margin-top: 3vh;
+  // text-align: center;
+  align-items: center;
+  // justify-content: center;
+  // width: 10vw;
+  width: 17vw;
+  /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+  display: flex;
+  padding: 1vw;
+  margin: 2vw;
+  justify-content: space-around;
+  // flex-direction: column;
+}
+
+
+
+.stackBoxx p {
+  // display: inline-block;
+  // width: 7vw; 
+  // height: 6vh;
+  width: 10vw;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* 너비를 자동으로 설정합니다. */
+  // height: auto;
+  border-radius: 30px;
+  background-color: #0433ff;
+  color: white;
+  font-family: 'Pretendard-ExtraLight';
+  padding: 0 10px;
+  font-weight: bold;
+
+
+}
+
+.stackBoxxx p {
+  width: 10vw;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* 너비를 자동으로 설정합니다. */
+  // height: auto;
+  border-radius: 30px;
+  background-color: #777777;
+  color: white;
+  font-family: 'Pretendard-ExtraLight';
+  padding: 0 10px;
+  font-weight: bold;
 }
 
 
