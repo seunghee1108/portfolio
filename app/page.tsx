@@ -173,10 +173,7 @@ function Index() {
         {selectedProject && <ProjectDetails project={selectedProject} />}
       </div>
 
-      {/* CONTACT */}
-      {/* <div ref={box5Ref} className={`${styles.div} ${styles.box5}`}>
-        <div className={styles.contact}>Contact</div>
-      </div> */}
+
     </div>
   );
 }
