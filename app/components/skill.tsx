@@ -23,39 +23,39 @@ const skillsData: SkillData[] = [
   { src: "/image/GitHub.png", alt: "Github" },
 ];
 export function getBackendSkills(): SkillData[] {
-  const backendSkills: SkillData[] = [
+  const backendSkills: string[] = [
     "Node.js",
     "JavaScript",
     "TypeScript",
     "AWS"
   ].flatMap(skill =>
-    skillsData.filter(data => data.alt === skill)
+    skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
   );
-  return backendSkills;
+  return backendSkills.map(src => ({ src, alt: "" })); // alt는 빈 문자열로 설정
 }
 
 export function getFrontendSkills(): SkillData[] {
-  const frontendSkills: SkillData[] = [
+  const frontendSkills: string[] = [
     "HTML",
     "CSS",
     "React",
     "Tailwind CSS",
     "Next.js"
   ].flatMap(skill =>
-    skillsData.filter(data => data.alt === skill)
+    skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
   );
-  return frontendSkills;
+  return frontendSkills.map(src => ({ src, alt: "" })); // alt는 빈 문자열로 설정
 }
 
 export function getToolSkills(): SkillData[] {
-  const toolSkills: SkillData[] = [
+  const toolSkills: string[] = [
     "GitHub",
     "VSCode",
     "Notion",
     "Slack",
     "Figma"
   ].flatMap(skill =>
-    skillsData.filter(data => data.alt === skill)
+    skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
   );
-  return toolSkills;
+  return toolSkills.map(src => ({ src, alt: "" })); // alt는 빈 문자열로 설정
 }
