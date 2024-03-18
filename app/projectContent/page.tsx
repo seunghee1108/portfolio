@@ -75,6 +75,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
     return null;
   }
 
+  
   return (
     <div className={styles.projectContent}>
         <div className={styles.contentImage}>

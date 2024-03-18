@@ -94,6 +94,9 @@
   display: flex;
   /* 부모 요소를 flex로 설정합니다. */
   justify-content: center;
+  position: relative;
+  width: 3vw;
+  height: 2vh;
 }
 
 .skillItem img {

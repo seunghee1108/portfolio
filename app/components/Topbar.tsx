@@ -1,12 +1,11 @@
 "use client";
 
-
 import React from "react";
 import styles from "@/app/styles/topbar.module.scss";
 
 import Link from "next/link";
 
-function Topbar({ box1Ref, box2Ref, box3Ref}) {
+function Topbar({ box1Ref, box2Ref, box3Ref, box4Ref }) {
   const scrollToRef = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,

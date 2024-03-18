@@ -5,22 +5,21 @@ import React, { useRef, useState } from "react";
 import styles from "@/app/styles/main.module.scss";
 import Topbar from "./components/Topbar";
 import {
-  backendSkills,
-  frontendSkills,
-  toolSkills,
+  getBackendSkills,
+  getFrontendSkills,
+  getToolSkills,
   SkillData,
-} from "./skill/page";
+} from "@/app/components/skill";
 import ProjectPage from "./project/page";
 import ProjectDetails from "./projectContent/page";
-
+import Image from "next/image";
 function Index() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [skillDescription, setSkillDescription] = useState("");
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
   const box3Ref = useRef(null);
-  const box4Ref = useRef(null);
-  // const box5Ref = useRef(null);
+  const box4Ref = useRef<HTMLDivElement>(null);
 
   const handleSkillClick = (description: string) => {
     setSkillDescription(description);
@@ -32,7 +31,8 @@ function Index() {
 
   const handleProjectContentClick = () => {
     const projectContentElement = document.getElementById("projectContent");
-    if (projectContentElement) {
+    // box4Ref가 null이 아닌 경우에만 offsetTop 속성을 사용
+    if (projectContentElement && box4Ref.current) {
       const box4OffsetTop = box4Ref.current.offsetTop;
       window.scrollTo({
         top: box4OffsetTop,
@@ -40,6 +40,7 @@ function Index() {
       });
     }
   };
+
 
   return (
     <div className={styles.container}>
@@ -109,12 +110,13 @@ function Index() {
           </div>
           <div className={styles.skillBox}>
             <div className={styles.backend}>
-              {backendSkills.map((skill: SkillData, index: number) => (
+              {getBackendSkills().map((skill: SkillData, index: number) => (
                 <div key={index} className={styles.skillItem}>
-                  <img
+                  <Image
                     src={skill.src}
                     alt={skill.alt}
                     className={styles.skillImage}
+                    fill={true}
                   />
                 </div>
               ))}
@@ -129,9 +131,9 @@ function Index() {
           </div>
           <div className={styles.skillBox}>
             <div className={styles.frontend}>
-              {frontendSkills.map((skill: SkillData, index: number) => (
+              {getFrontendSkills().map((skill: SkillData, index: number) => (
                 <div key={index} className={styles.skillItem}>
-                  <img src={skill.src} alt={skill.alt} />
+                  <Image src={skill.src} alt={skill.alt} fill={true}/>
                 </div>
               ))}
             </div>
@@ -145,9 +147,9 @@ function Index() {
           </div>
           <div className={styles.skillBox}>
             <div className={styles.tools}>
-              {toolSkills.map((skill: SkillData, index: number) => (
+              {getToolSkills().map((skill: SkillData, index: number) => (
                 <div key={index} className={styles.skillItem}>
-                  <img src={skill.src} alt={skill.alt} />
+                  <Image src={skill.src} alt={skill.alt} fill={true} />
                 </div>
               ))}
             </div>
