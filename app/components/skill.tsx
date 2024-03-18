@@ -18,7 +18,7 @@ const skillsData: SkillData[] = [
   { src: "/image/Notion.png", alt: "Notion" },
   { src: "/image/Slack.png", alt: "Slack" },
   { src: "/image/Figma.png", alt:  "Figma"},
-  { src: "/image/vscode.png", alt: "VSCode" },
+  { src: "/image/VSCode.png", alt: "VSCode" },
   { src: "/image/Node.js.png", alt: "Node.js" },
   { src: "/image/GitHub.png", alt: "Github" },
 ];
@@ -49,7 +49,7 @@ export function getFrontendSkills(): SkillData[] {
 
 export function getToolSkills(): SkillData[] {
   const toolSkills: string[] = [
-    "GitHub",
+    "Github",
     "VSCode",
     "Notion",
     "Slack",
