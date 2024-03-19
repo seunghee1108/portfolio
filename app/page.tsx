@@ -78,7 +78,7 @@ function Index() {
           </div>
         </div>
         <div className={styles.aboutBoxTwo}>
-          <p>010-6354-8982</p>
+          {/* <p>010</p> */}
           <div>
             <p>
               <a href="mailto:bangseunghee1108@gmail.com">
@@ -163,6 +163,7 @@ function Index() {
         className={`${styles.div} ${styles.box3}`}
         onClick={handleProjectContentClick}
       >
+        
         <ProjectPage handleProjectClick={handleProjectClick} />
       </div>
 
@@ -172,6 +173,11 @@ function Index() {
         ref={box4Ref}
         className={`${styles.div} ${styles.box4}`}
       >
+        
+          {!selectedProject && (
+            <ProjectDetails project="BOARD" />
+    // <p className={styles.projectPrompt}>프로젝트를 클릭하면 자세히 볼 수 있습니다. </p>
+  )}
         {selectedProject && <ProjectDetails project={selectedProject} />}
       </div>
 
