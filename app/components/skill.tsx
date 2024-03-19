@@ -9,11 +9,12 @@ const skillsData: SkillData[] = [
   { src: "/image/TypeScript.png", alt: "TypeScript"},
   { src: "/image/MariaDB.png", alt: "MariaDB" },
   { src: "/image/MongoDB.png", alt: "MongoDB"},
+  { src: "/image/mysql.png", alt: "mysql"},
   { src: "/image/AWS.png", alt: "AWS" },
   { src: "/image/HTML.png", alt: "HTML" },
   { src: "/image/CSS.png", alt: "CSS"},
   { src: "/image/React.png", alt: "React" },
-  { src: "/image/TailwindCSS.png", alt: "Tailwind " },
+  { src: "/image/TailwindCSS.png", alt: "Tailwind" },
   { src: "/image/Next.js.png", alt: "Next.js" },
   { src: "/image/Notion.png", alt: "Notion" },
   { src: "/image/Slack.png", alt: "Slack" },
@@ -27,7 +28,10 @@ export function getBackendSkills(): SkillData[] {
     "Node.js",
     "JavaScript",
     "TypeScript",
-    "AWS"
+    "AWS",
+    "MariaDB",
+    "MongoDB",
+    "mysql"
   ].flatMap(skill =>
     skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
   );
@@ -38,8 +42,8 @@ export function getFrontendSkills(): SkillData[] {
   const frontendSkills: string[] = [
     "HTML",
     "CSS",
+    "Tailwind",
     "React",
-    "Tailwind CSS",
     "Next.js"
   ].flatMap(skill =>
     skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
