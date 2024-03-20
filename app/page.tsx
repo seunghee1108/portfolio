@@ -91,7 +91,7 @@ function Index() {
               </a>
             </p>
             <p>
-              <a href="https://shelled-nylon-975.notion.site/d46563d5bec54dff964c4bf2f97cfb94?pvs=4">
+              <a href="https://shelled-nylon-975.notion.site/9362b4a2d6c14c2e9808f96cc91ebce3?v=838063ed878d4df7a2e948144fe7b341&pvs=4">
                 Notion
               </a>
             </p>
