@@ -41,7 +41,6 @@ function Index() {
     }
   };
 
-
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -133,7 +132,7 @@ function Index() {
             <div className={styles.frontend}>
               {getFrontendSkills().map((skill: SkillData, index: number) => (
                 <div key={index} className={styles.skillItem}>
-                  <Image src={skill.src} alt={skill.alt} fill={true}/>
+                  <Image src={skill.src} alt={skill.alt} fill={true} />
                 </div>
               ))}
             </div>
@@ -143,7 +142,7 @@ function Index() {
         {/* 도구 섹션 */}
         <div>
           <div className={styles.stackBoxx}>
-            <p>TOOLS</p>
+            <p>TOOL</p>
           </div>
           <div className={styles.skillBox}>
             <div className={styles.tools}>
@@ -163,7 +162,6 @@ function Index() {
         className={`${styles.div} ${styles.box3}`}
         onClick={handleProjectContentClick}
       >
-        
         <ProjectPage handleProjectClick={handleProjectClick} />
       </div>
 
@@ -173,15 +171,12 @@ function Index() {
         ref={box4Ref}
         className={`${styles.div} ${styles.box4}`}
       >
-        
-          {!selectedProject && (
-            <ProjectDetails project="BOARD" />
-    // <p className={styles.projectPrompt}>프로젝트를 클릭하면 자세히 볼 수 있습니다. </p>
-  )}
+        {!selectedProject && (
+          <ProjectDetails project="BOARD" />
+          // <p className={styles.projectPrompt}>프로젝트를 클릭하면 자세히 볼 수 있습니다. </p>
+        )}
         {selectedProject && <ProjectDetails project={selectedProject} />}
       </div>
-
-
     </div>
   );
 }
