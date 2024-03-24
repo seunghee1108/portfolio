@@ -26,12 +26,10 @@ const skillsData: SkillData[] = [
 export function getBackendSkills(): SkillData[] {
   const backendSkills: string[] = [
     "Node.js",
-    "JavaScript",
-    "TypeScript",
-    "AWS",
+    "mysql",
     "MariaDB",
     "MongoDB",
-    "mysql"
+    "AWS",
   ].flatMap(skill =>
     skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
   );
@@ -40,11 +38,13 @@ export function getBackendSkills(): SkillData[] {
 
 export function getFrontendSkills(): SkillData[] {
   const frontendSkills: string[] = [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
     "HTML",
     "CSS",
-    "Tailwind",
-    "React",
-    "Next.js"
+    // "Tailwind",
   ].flatMap(skill =>
     skillsData.filter(data => data.alt === skill).map(data => data.src) // src만 추출하여 문자열 배열 생성
   );
