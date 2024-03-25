@@ -20,30 +20,27 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
       images: string[];
     };
   } = {
+    TOURMAPS: {
+    number: "01",
+    description:
+      "공공데이터포털에서 제공하는 OPEN API를 활용하여 제작한 프로젝트입니다. 여행 지역이나 관심사를 검색할 수 있는 기능과 지역별, 코스별로 여행 코스를 추천받을 수 있는 서비스로 관심 있는 코스의 관련 정보를 제공합니다.",
+    link: "http://tourmaps.seungheee.net/",
+    github: "https://github.com/seunghee1108/tourmaps",
+    review:
+      "프로젝트를 진행하면서 공공데이터포털의 API를 활용한 경험은 매우 유익했습니다.데이터를 가져오고 활용하는 과정에서 편리함을 느꼈고, 이를 통해 사용자에게 더 나은 서비스를 제공할 수 있게 되었습니다. 사용자들이 각자의 취향과 관심사에 맞춰 최적의 여행 계획을 도와줄 수 있어서 보람 만족함을 느낍니다.",
+    technology: "JavaScript, TypeScript, React, Next.js, AWS, SCSS",
+    images: ["/tourmapsmain.png", "/tourmaps1.png", "/tourmaps2.png"],
+  },
     BOARD: {
-      number: "01",
+      number: "02",
       description:
-      "이 프로젝트는 Express와 MongoDB를 기반으로 제작하였습니다. 사용자는 회원가입, 로그인, 글 작성, 댓글 작성과 같은 기능을 활용할 수 있습니다.\n또한, AWS S3를 이용하여 사진을 첨부하는 기능을 제공하며 글의 작성자와 사용자의 ID가 일치한다면 글의 수정 및 삭제도 가능합니다.\n이 프로젝트는 Express와 MongoDB를 기반으로 제작하였습니다. 사용자는 회원가입, 로그인, 글 작성, 댓글 작성과 같은 기능을 활용할 수 있습니다.\n또한, AWS S3를 이용하여 사진을 첨부하는 기능을 제공하며 글의 작성자와 사용자의 ID가 일치한다면 글의 수정 및 삭제도 가능합니다."
-,description:
-"이 프로젝트는 Express와 MongoDB를 기반으로 제작하였습니다. 사용자는 회원가입, 로그인, 글 작성, 댓글 작성과 같은 기능을 활용할 수 있습니다.\n또한, AWS S3를 이용하여 사진을 첨부하는 기능을 제공하며 글의 작성자와 사용자의 ID가 일치한다면 글의 수정 및 삭제도 가능합니다.\n이 프로젝트는 Express와 MongoDB를 기반으로 제작하였습니다. 사용자는 회원가입, 로그인, 글 작성, 댓글 작성과 같은 기능을 활용할 수 있습니다.\n또한, AWS S3를 이용하여 사진을 첨부하는 기능을 제공하며 글의 작성자와 사용자의 ID가 일치한다면 글의 수정 및 삭제도 가능합니다."
-  
+      "회원가입, 로그인, 글 작성, 댓글 작성 기능이 가능한 웹 사이트입니다.이 프로젝트는 Express와 MongoDB를 기반으로 제작하였습니다. 사용자는 회원가입, 로그인, 글 작성, 댓글 작성과 같은 기능을 활용할 수 있습니다.\n또한, AWS S3를 이용하여 사진을 첨부하는 기능을 제공하며 글의 작성자와 사용자의 ID가 일치한다면 글의 수정 및 삭제도 가능합니다.\n이 프로젝트는 Express와 MongoDB를 기반으로 제작하였습니다. 사용자는 회원가입, 로그인, 글 작성, 댓글 작성과 같은 기능을 활용할 수 있습니다.\n또한, AWS S3를 이용하여 사진을 첨부하는 기능을 제공하며 글의 작성자와 사용자의 ID가 일치한다면 글의 수정 및 삭제도 가능합니다.",
       link: "http://shboard.seungheee.net/",
       github: "https://github.com/seunghee1108/Board",
       review:
         "게시판 프로젝트를 진행하면서 MongoDB에 대한 이해를 높일 수 있었습니다. MongoDB를 선택한 이유는 NoSQL의 유연성과 스키마의 제한이 없는 특성때문입니다. 이를 통해 로그인 정보나 글 작성과 같은 데이터를 효율적으로 저장하고 빠르게 데이터를 처리할 수 있었습니다. 사용자가 글을 작성하고 댓글을 나눌 수 있는 공간을 만들어가는 과정이 특히 흥미로웠습니다. 또한, 추가적인 기능을 도입하고 사용자 경험을 향상시키며 프로젝트를 발전해 나갈 것입니다.",
       technology: "JavaScript, Node.js, Express, MongoDB, EJS, CSS",
       images: ["/boardmain.png", "/board2.png", "/board3.png"],
-    },
-    TOURMAPS: {
-      number: "02",
-      description:
-        "공공데이터포털에서 제공하는 OPEN API를 활용하여 제작한 프로젝트입니다. 여행 지역이나 관심사를 검색할 수 있는 기능과 지역별, 코스별로 여행 코스를 추천받을 수 있는 서비스로 관심 있는 코스의 관련 정보를 제공합니다.",
-      link: "http://tourmaps.seungheee.net/",
-      github: "https://github.com/seunghee1108/tourmaps",
-      review:
-        "프로젝트를 진행하면서 공공데이터포털의 API를 활용한 경험은 매우 유익했습니다.데이터를 가져오고 활용하는 과정에서 편리함을 느꼈고, 이를 통해 사용자에게 더 나은 서비스를 제공할 수 있게 되었습니다. 사용자들이 각자의 취향과 관심사에 맞춰 최적의 여행 계획을 도와줄 수 있어서 보람 만족함을 느낍니다.",
-      technology: "JavaScript, TypeScript, React, Next.js, AWS, SCSS",
-      images: ["/tourmapsmain.png", "/tourmaps1.png", "/tourmaps2.png"],
     },
     "ERP-PROJECT": {
       number: "03",
@@ -131,7 +128,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/Notion.png" alt="link" />
+              {/* <img src="/Notion.png" alt="link" /> */}
             </a>
           </div>
         </div>

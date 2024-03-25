@@ -16,17 +16,17 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
 
   return (
     <div className={styles.project}>
-      <div className={styles.imageContainer}>
+            <div className={styles.imageContainer}>
         <img
-          src="/boardmain.png"
-          alt="BOARD"
+          src="/tourmapsmain.png"
+          alt="TOURMAPS"
           onClick={(e) => e.stopPropagation()}
         />
         <div className={styles.caption}>
           <p>01</p>
-          <h1>BOARD</h1>
+          <h1>TOURMAPS</h1>
           <p>Solo project</p>
-          <a href="#box4" onClick={() => handleDetailClick("BOARD")}>
+          <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")}>
             자세히 보기 &gt;
           </a>
         </div>
@@ -34,15 +34,15 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
 
       <div className={styles.imageContainer}>
         <img
-          src="/tourmapsmain.png"
-          alt="TOURMAPS"
+          src="/boardmain.png"
+          alt="BOARD"
           onClick={(e) => e.stopPropagation()}
         />
         <div className={styles.caption}>
           <p>02</p>
-          <h1>TOURMAPS</h1>
+          <h1>BOARD</h1>
           <p>Solo project</p>
-          <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")}>
+          <a href="#box4" onClick={() => handleDetailClick("BOARD")}>
             자세히 보기 &gt;
           </a>
         </div>

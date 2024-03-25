@@ -172,7 +172,7 @@ function Index() {
         className={`${styles.div} ${styles.box4}`}
       >
         {!selectedProject && (
-          <ProjectDetails project="BOARD" />
+          <ProjectDetails project="TOURMAPS" />
           // <p className={styles.projectPrompt}>프로젝트를 클릭하면 자세히 볼 수 있습니다. </p>
         )}
         {selectedProject && <ProjectDetails project={selectedProject} />}
