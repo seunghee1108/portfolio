@@ -16,7 +16,7 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
 
   return (
     <div className={styles.project}>
-            <div className={styles.imageContainer}>
+      <div className={styles.imageContainer}>
         <img
           src="/tourmapsmain.png"
           alt="TOURMAPS"
@@ -26,7 +26,8 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
           <p>01</p>
           <h1>TOURMAPS</h1>
           <p>Solo project</p>
-          <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")}>
+          {/* 버튼에 'button-to-box4' 클래스 추가 */}
+          <a href="#box4" onClick={() => handleDetailClick("TOURMAPS")} className="button-to-box4">
             자세히 보기 &gt;
           </a>
         </div>
@@ -42,7 +43,8 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
           <p>02</p>
           <h1>BOARD</h1>
           <p>Solo project</p>
-          <a href="#box4" onClick={() => handleDetailClick("BOARD")}>
+          {/* 버튼에 'button-to-box4' 클래스 추가 */}
+          <a href="#box4" onClick={() => handleDetailClick("BOARD")} className="button-to-box4">
             자세히 보기 &gt;
           </a>
         </div>
@@ -58,7 +60,8 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
           <p>03</p>
           <h1>ERP-PROJECT</h1>
           <p>Team project</p>
-          <a href="#box4" onClick={() => handleDetailClick("ERP-PROJECT")}>
+          {/* 버튼에 'button-to-box4' 클래스 추가 */}
+          <a href="#box4" onClick={() => handleDetailClick("ERP-PROJECT")} className="button-to-box4">
             자세히 보기 &gt;
           </a>
         </div>
