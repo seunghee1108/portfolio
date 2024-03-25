@@ -64,7 +64,7 @@
 
 .projectContent {
   margin-top: 20vh;
-  width: 70vw;
+  width: 80vw;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@
 }
 
 .contentImage img {
-  width:38vw;
+  width:35vw;
   height: 55vh;
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@
 
 
 .contentBox {
-  width: 25vw;
+  width: 38vw;
   height: 68vh;
 }
 
@@ -118,6 +118,7 @@
   }
   p {
     margin-bottom: 1vh; /* 원하는 만큼의 간격을 설정하세요 */
+    text-align: justify;
     line-height: 1.5; /* 줄간격 조정 */
     margin-left: 1vh;
   };
@@ -157,3 +158,5 @@
   text-align: center;
  margin-bottom: 2vh; 
 }}
+
+

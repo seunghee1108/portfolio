@@ -44,7 +44,7 @@
 
 .box3 {
   height: 100vh;
-  background-color: #ffffff;
+  // background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,25 +56,17 @@
   height: 100vh;
   display: flex;
   // flex-wrap: wrap;
-  background-color: #ffffff;
+  // background-color: #ffffff;
 
   justify-content: center;
   align-items: center;
 }
 
-.box5 {
-  height: 100vh;
-  background-color: #FFFFFF;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-}
 
 .contact {
   font-size: 2rem;
 
   color: white;
-  /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
 }
 
 
@@ -82,16 +74,16 @@
 .project {
   display: flex;
   flex-direction: row;
-  background-color: #FFFFFF;
+  // background-color: #FFFFFF;
 
   // margin: 3vw;
 }
 
 
 .project>div {
-  width: 33vw;
+  width: 30vw;
   height: 60vh;
-  background-color: #EEEEEE;
+  // background-color: #EEEEEE;
   // margin-right: 5vw;
   display: flex;
   flex-direction: column;
@@ -124,11 +116,11 @@
 
 
 .project img {
-  width: 34vw;
+  width: 30vw;
   height: 60vh;
 
 
-  border-radius: 5px;
+  // border-radius: 5px;
   //   display: flex;
   //   justify-content: center;
   //   align-items: center;
