@@ -29,18 +29,23 @@ function Index() {
     setSelectedProject(project);
   };
 
-  const handleProjectContentClick = () => {
-    const projectContentElement = document.getElementById("projectContent");
-    // box4Ref가 null이 아닌 경우에만 offsetTop 속성을 사용
-    if (projectContentElement && box4Ref.current) {
-      const box4OffsetTop = box4Ref.current.offsetTop;
-      window.scrollTo({
-        top: box4OffsetTop,
-        behavior: "smooth",
-      });
+  const handleProjectContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // 특정 버튼을 클릭했을 때만 페이지 이동 처리
+    const clickedElement = e.target as HTMLElement;
+    // 여기에서 특정 버튼이나 요소를 식별할 수 있는 조건을 추가하십시오.
+    // 예를 들어, 특정 버튼의 클래스명이 'button-to-box4'라고 가정하겠습니다.
+    if (clickedElement.classList.contains('button-to-box4')) {
+      const projectContentElement = document.getElementById("projectContent");
+      // box4Ref가 null이 아닌 경우에만 offsetTop 속성을 사용
+      if (projectContentElement && box4Ref.current) {
+        const box4OffsetTop = box4Ref.current.offsetTop;
+        window.scrollTo({
+          top: box4OffsetTop,
+          behavior: "smooth",
+        });
+      }
     }
   };
-
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
