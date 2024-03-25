@@ -162,11 +162,14 @@
 .caption p {
   margin-bottom: 3vw; /* 문단 사이의 간격을 설정합니다. */
   // cursor: pointer;
+  font-family: 'Pretendard-Light';
+
 
 }
 
 .caption h1 {
   margin-bottom: 2vw; /* 제목과 다음 요소 사이의 간격을 조정합니다. */
+  font-family: 'Pretendard-Bold';
 }
 
 .caption:hover img {
@@ -177,9 +180,12 @@
   color: #000; /* 기본 텍스트 색상 */
   text-decoration: none; /* 기본 링크 밑줄 제거 */
   transition: color 0.3s ease; /* 색상 변화에 애니메이션 적용 */
+  font-family: 'Pretendard-Light';
+
 }
 
 .caption a:hover {
   color: #0433ff; /* 호버 시 색상 변경 */
   text-decoration: underline; /* 호버 시 밑줄 생성 */
+  
 }
