@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"
+"use client";
 
 import { NextPage } from 'next';
-import React , { useRef }from "react";
+import React, { useRef } from "react";
 import styles from "@/app/styles/project.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Scrollbar } from "swiper/core";
 import "swiper/css";
-import SwiperCore from "swiper";
-import { Navigation, Scrollbar, EffectCards } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
@@ -28,21 +27,20 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
     }
   };
 
-  SwiperCore.use([Navigation, Scrollbar]);
-  const swiperRef = useRef<SwiperCore>();
   const projects = [
     { name: "TOURMAPS", imageUrl: "/tourmapsmain.png", alt: "TOURMAPS", description: "Solo project" },
     { name: "BOARD", imageUrl: "/boardmain.png", alt: "BOARD", description: "Solo project" },
     { name: "ERP-PROJECT", imageUrl: "/erp.png", alt: "ERPPROJECT", description: "Team project" },
-    { name: "ERP-PROJECTgg", imageUrl: "/tourmapsmain.png", alt: "ERPPROJECT", description: "Team project" } ,
+    { name: "ERP-PROJECTgg", imageUrl: "/tourmapsmain.png", alt: "ERPPROJECT", description: "Team project" },
     { name: "ERP-PROJECT", imageUrl: "/erp.png", alt: "ERPPROJECT", description: "Team project" },
     { name: "ERP-PROJECTgg", imageUrl: "/tourmapsmain.png", alt: "ERPPROJECT", description: "Team project" }
   ];
 
+  SwiperCore.use([Navigation, Scrollbar]);
+
   return (
     <div className={styles.project}>
       <Swiper
-        modules={[Navigation, Scrollbar]}
         className={styles.swiperslider}
         spaceBetween={0} // 슬라이스 사이 간격
         slidesPerView={3} // 보여질 슬라이스 수
@@ -66,7 +64,7 @@ const ProjectPage: NextPage<ProjectPageProps> = ({ handleProjectClick }) => {
                 <h1>{project.name}</h1>
                 <p>{project.description}</p>
                 <a
-                  href="#"
+                  href="#box4"
                   onClick={(e) => {
                     e.preventDefault();
                     handleDetailClick(project.name);
