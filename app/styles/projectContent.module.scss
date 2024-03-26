@@ -128,7 +128,8 @@
   margin-top: 2vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 1vw;
   border: none; 
   img {
     width: 2vw;
@@ -262,15 +263,15 @@
   }
 
   .contentBox h1 {
-    font-size: 24px;
+    font-size: 28px; /* 원하는 크기로 조정 */
   }
 
   .contentBox p {
-    font-size: 14px;
+    font-size: 16px; /* 원하는 크기로 조정 */
   }
 
   .contentBox h4 {
-    font-size: 18px;
+    font-size: 20px; /* 원하는 크기로 조정 */
   }
 
   .contentBox .link {
