@@ -247,42 +247,42 @@
 }
 
 /* 작은 화면을 위한 스타일 */
-@media only screen and (max-width: 400px) {
-  .projectContent {
-    flex-direction: column;
-    align-items: center;
-  }
+// @media only screen and (max-width: 400px) {
+//   .projectContent {
+//     flex-direction: column;
+//     align-items: center;
+//   }
 
-  .contentImage {
-    margin-bottom: 20px;
-  }
+//   .contentImage {
+//     margin-bottom: 20px;
+//   }
 
-  .contentBox {
-    width: 100%;
-  }
+//   .contentBox {
+//     width: 100%;
+//   }
 
-  .contentBox h1 {
-    font-size: 24px;
-  }
+//   .contentBox h1 {
+//     font-size: 24px;
+//   }
 
-  .contentBox p {
-    font-size: 14px;
-  }
+//   .contentBox p {
+//     font-size: 14px;
+//   }
 
-  .contentBox h4 {
-    font-size: 18px;
-  }
+//   .contentBox h4 {
+//     font-size: 18px;
+//   }
 
-  .contentBox .link {
-    flex-direction: column;
-  }
+//   .contentBox .link {
+//     flex-direction: column;
+//   }
 
-  .contentBox .link div {
-    margin-bottom: 10px;
-  }
+//   .contentBox .link div {
+//     margin-bottom: 10px;
+//   }
 
-  .link img {
-    width: 24px;
-    height: 24px;
-  }
-}
+//   .link img {
+//     width: 24px;
+//     height: 24px;
+//   }
+// }
