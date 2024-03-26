@@ -29,18 +29,21 @@ function Index() {
     setSelectedProject(project);
   };
 
-  const handleProjectContentClick = () => {
-    const projectContentElement = document.getElementById("projectContent");
-    // box4Ref가 null이 아닌 경우에만 offsetTop 속성을 사용
-    if (projectContentElement && box4Ref.current) {
-      const box4OffsetTop = box4Ref.current.offsetTop;
-      window.scrollTo({
-        top: box4OffsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
+  const handleProjectContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // 클릭된 요소의 부모나 조상 요소들을 확인하여 특정 클래스를 가지고 있는지 확인
+    const clickedElement = e.target as HTMLElement;
+    // if (clickedElement.closest('.handleDetailClick')) {
+        const projectContentElement = document.getElementById("projectContent");
+        // box4Ref가 null이 아닌 경우에만 offsetTop 속성을 사용
+        if (projectContentElement && box4Ref.current) {
+            const box4OffsetTop = box4Ref.current.offsetTop;
+            window.scrollTo({
+                top: box4OffsetTop,
+                behavior: "smooth",
+            });
+        }
+    // }
+};
 
   return (
     <div className={styles.container}>
@@ -105,7 +108,7 @@ function Index() {
       <div ref={box2Ref} className={`${styles.div} ${styles.box2}`}>
         {/* 백엔드 섹션 */}
         <div>
-          <div className={styles.stackBoxx}>
+          <div className={styles.stackBoxTwo}>
             <p>BACK-END</p>
           </div>
           <div className={styles.skillBox}>
@@ -126,7 +129,7 @@ function Index() {
 
         {/* 프론트엔드 섹션 */}
         <div>
-          <div className={styles.stackBoxxx}>
+          <div className={styles.stackBoxThree}>
             <p>FRONT-END</p>
           </div>
           <div className={styles.skillBox}>
@@ -142,7 +145,7 @@ function Index() {
 
         {/* 도구 섹션 */}
         <div>
-          <div className={styles.stackBoxx}>
+          <div className={styles.stackBoxTwo}>
             <p>TOOL</p>
           </div>
           <div className={styles.skillBox}>
