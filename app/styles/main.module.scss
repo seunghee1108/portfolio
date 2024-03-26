@@ -19,8 +19,6 @@
   font-style: normal;
 }
 
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -402,7 +400,7 @@
 }
 
 
-.stackBoxx {
+.stackBoxTwo {
   // width: 30vw;
   height: 2vh;
   // margin-top: 3vh;
@@ -420,7 +418,7 @@
 }
 
 
-.stackBoxxx {
+.stackBoxThree {
   // width: 30vw;
   height: 2vh;
   // margin-top: 3vh;
@@ -439,7 +437,7 @@
 
 
 
-.stackBoxx p {
+.stackBoxTwo p {
   // display: inline-block;
   // width: 7vw; 
   // height: 6vh;
@@ -461,7 +459,7 @@
 
 }
 
-.stackBoxxx p {
+.stackBoxThree p {
   width: 10vw;
   height: 3vh;
   display: flex;
@@ -500,4 +498,486 @@
 .fontBox p {
   font-size: 2rem;
   font-family: 'Pretendard-Light';
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 400px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .box1 {
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .box2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box3 {
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //   flex-wrap: wrap;
+  }
+  
+  
+  .box4 {
+    height: 100vh;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+ 
+  .contact {
+    font-size: 2rem;
+    color: white;
+    /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
+  }
+  
+  .backend,
+  .frontend,
+  .tools {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // justify-content: space-between; /* 요소 사이의 간격을 최대한 넓힘 */
+  }
+  
+  .skillItem {
+    // text-align: center; 
+    // width: calc(50% - 10px);
+    // margin-bottom: 1px;
+    display: flex;
+    /* 부모 요소를 flex로 설정합니다. */
+    justify-content: center;
+    position: relative;
+    width: 12vw;
+    height: 6vh;
+  }
+  
+  .skillItem img {
+    width: 12vw;
+    height: 7vh;
+    // margin-bottom: 10px;
+    max-width: 100%;
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skillBox {
+    border-radius: 5px;
+    width: 17vw;
+    // aspect-ratio: ;
+    height: 52vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1vw;
+    margin: 2vw;
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .project {
+    display: flex;
+    flex-direction: row;
+    margin: 3vw;
+  }
+  
+  
+  .project>div {
+    width: 20vw;
+    height: 55vh;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3vw;
+    border-radius: 5px;
+  }
+  
+  .fontBox {
+    width: 100%;
+    /* div의 전체 너비를 차지하도록 설정합니다. */
+    margin-top: 10px;
+    /* 이미지와의 간격을 조정합니다. */
+    margin-left: 2vw;
+    align-items: center;
+    display: flex;
+  
+  }
+  
+  .project div h2 {
+    font-size: 1.5em;
+    /* h2의 글꼴 크기를 조정합니다. */
+  }
+  
+  .project div h3 {
+    font-size: 1.1em;
+    /* p의 글꼴 크기를 조정합니다. */
+    margin: 13px;
+    /* h2와 p 사이의 간격을 조정합니다. */
+  }
+  
+  // .project p {
+  //   width: 100%;
+  //   /* div의 전체 너비를 차지하도록 설정합니다. */
+  //   margin-top: 10px;
+  //   /* 이미지와의 간격을 조정합니다. */
+  //   margin-left: 2vw;
+  //   align-items: center;
+  //   display: flex;
+  // }
+  
+  .project img {
+    width: 18vw;
+    height: 23vh;
+  
+    border-radius: 5px;
+    margin-top: 3vh;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //     flex-wrap: wrap;
+  }
+  
+  .fontContent {
+    width: 18vw;
+    align-items: flex-start;
+    /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+    display: flex;
+    flex-direction: column;
+    /* 아이템들을 세로로 배치합니다. */
+  }
+  
+  .fontContent p {
+    text-align: left;
+    /* 텍스트를 왼쪽으로 정렬합니다. */
+  }
+  
+  .fontContent h4 {
+    font-size: 1.1em;
+  
+    text-align: left;
+    /* 텍스트를 왼쪽으로 정렬합니다. */
+  }
+  
+  .projectContent {
+    margin-top: 20vh;
+    width: 70vw;
+    height: 70vh;
+    // background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7vw;
+    // padding: 3vw;
+  }
+  
+  .contentImage {
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    // align-items: start;
+    // justify-content: start;
+    flex-direction: column;
+    // background-color: aqua;
+  }
+  
+  
+  .contentImage img {
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contentImage div {
+    width: 25vw;
+    height: auto;
+    margin-top: 3vh;
+  }
+  
+  .contentImage h4 {
+  
+    margin-bottom: 5px;
+    background-color: #DDDDDD;
+    /* 배경색을 원하는 색상으로 지정합니다. */
+    padding: 5px 10px;
+    /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+    display: inline-block;
+    /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+    // margin-top: 1vw;
+    border-radius: 5px;
+    /* 둥근 모서리를 적용합니다. */
+  }
+  
+  .contentImage div p {
+    padding-bottom: 10px;
+  }
+  
+  .contentBox {
+    width: 30vw;
+    height: 60vh;
+    // background-color: aquamarine;
+  }
+  
+  .contentBox {
+    div {
+      padding: 2vh;
+      color: #333;
+    }
+  }
+  
+  
+  .contentBox h4 {
+    background-color: #DDDDDD;
+    /* 배경색을 원하는 색상으로 지정합니다. */
+    padding: 5px 10px;
+    /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+    margin-bottom: 5px;
+  
+    display: inline-block;
+    /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+    border-radius: 5px;
+    /* 둥근 모서리를 적용합니다. */
+  }
+  
+  .fontContent h4 {
+    background-color: #DDDDDD;
+    padding: 5px 10px;
+    /* 내부 여백을 추가하여 텍스트와 경계 사이에 공간을 만듭니다. */
+    margin-bottom: 5px;
+    display: inline-block;
+    /* 인라인 요소로 설정하여 컨텐츠에 맞게 크기를 조정합니다. */
+    border-radius: 5px;
+    /* 둥근 모서리를 적용합니다. */
+  }
+  
+  .stackBox {
+    // width: 30vw;
+    height: 10vw;
+    margin-top: 4vh;
+    text-align: left;
+    width: 18vw;
+    align-items: flex-start;
+    /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aboutBox {
+    width: 100vw;
+    height: 100vh;
+    // background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+  
+  }
+  
+  .aboutBoxTwo {
+    width: 100vw;
+    height: 40vh;
+    // background-color: #DDDDDD;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  
+  
+  }
+  
+  .aboutBoxTwo p {
+    padding: 1.5vh;
+    font-size: 1.3rem;
+    color: #333333;
+    text-align: center;
+  
+    font-family: 'Pretendard-Light';
+  }
+  
+  
+  .aboutBoxTwo a {
+    padding: 1.5vh;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #333333;
+    font-family: 'Pretendard-Light';
+  }
+  
+  .aboutBox img {
+    width: 13vw;
+    height: 30vh;
+    margin-left: 25vw;
+  }
+  
+  .fontBox {
+    // padding: 5vw;
+    margin: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  
+  .fontBoxTwo p {
+    margin-top: 1vw;
+    font-size: 1.1rem;
+    font-family: 'Pretendard-ExtraLight';
+    color: #777777;
+  
+  }
+  
+  .fontBox div p {
+    margin-top: 1vw;
+    font-size: 1.1rem;
+    font-family: 'Pretendard-ExtraLight';
+    // color: #777777;
+  }
+  
+  .fontBox p,
+  .fontBox h1 {
+    margin-bottom: 2vh;
+    /* 각각의 문단과 제목 사이의 간격을 조절합니다. */
+  }
+  
+  .stackBox {
+    width: 20vw;
+    /* 너비를 뷰포트 너비의 20%로 조정합니다. */
+    height: 5vh;
+    //  width: 8vw; /* 너비를 뷰포트 너비의 20%로 조정합니다. */
+    // height: 7vh; /* 높이를 뷰포트 높이의 5%로 조정합니다. */
+  }
+  
+  
+  .stackBoxTwo {
+    // width: 30vw;
+    height: 2vh;
+    // margin-top: 3vh;
+    // text-align: center;
+    align-items: center;
+    // justify-content: center;
+    // width: 10vw;
+    width: 17vw;
+    /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+    display: flex;
+    padding: 1vw;
+    margin: 2vw;
+    justify-content: space-around;
+    // flex-direction: column;
+  }
+  
+  
+  .stackBoxThree {
+    // width: 30vw;
+    height: 2vh;
+    // margin-top: 3vh;
+    // text-align: center;
+    align-items: center;
+    // justify-content: center;
+    // width: 10vw;
+    width: 17vw;
+    /* 아이템을 컨테이너의 시작 부분에 정렬합니다. */
+    display: flex;
+    padding: 1vw;
+    margin: 2vw;
+    justify-content: space-around;
+    // flex-direction: column;
+  }
+  
+  
+  
+  .stackBoxTwo p {
+    // display: inline-block;
+    // width: 7vw; 
+    // height: 6vh;
+    width: 10vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* 너비를 자동으로 설정합니다. */
+    // height: auto;
+    border-radius: 30px;
+    background-color: #0433ff;
+    color: white;
+    font-family: 'Pretendard-ExtraLight';
+    padding: 0 10px;
+    font-weight: bold;
+  
+  
+  }
+  
+  .stackBoxThree p {
+    width: 10vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* 너비를 자동으로 설정합니다. */
+    // height: auto;
+    border-radius: 30px;
+    background-color: #777777;
+    color: white;
+    font-family: 'Pretendard-ExtraLight';
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  
+  
+  .stackBox p {
+    display: inline-block;
+    // width: 7vw; 
+    // height: 6vh;
+    width: auto;
+     height: auto;
+    border-radius: 30px;
+    background-color: #0433ff;
+    color: white;
+    font-family: 'Pretendard-ExtraLight';
+    padding: 0 10px;
+  }
+  
+  .fontBox h1 {
+    font-size: 3rem;
+    font-family: 'Pretendard-Bold';
+  }
+  
+  .fontBox p {
+    font-size: 1rem;
+    font-family: 'Pretendard-Light';
+  }
+  
 }
