@@ -3,9 +3,6 @@
 
 import React, { useState, useEffect, Component } from "react";
 import styles from "@/app/styles/projectContent.module.scss";
-import "react-notion/src/styles.css";
-import "prismjs/themes/prism-tomorrow.css";
-
 
 interface ProjectDetailsProps {
   project: string | null;
