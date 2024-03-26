@@ -378,50 +378,50 @@
 }
 
 /* 작은 화면을 위한 스타일 */
-// @media only screen and (max-width: 400px) {
-//   /* 폰트 크기 조정 */
-//   .fontBox h1 {
-//     font-size: 2.5rem;
-//   }
+@media only screen and (max-width: 400px) {
+  /* 폰트 크기 조정 */
+  .fontBox h1 {
+    font-size: 2.5rem;
+  }
 
-//   .fontBox p {
-//     font-size: 1.5rem;
-//   }
+  .fontBox p {
+    font-size: 1.5rem;
+  }
 
-//   /* 박스의 너비 조정 */
-//   .contentBox,
-//   .project>div {
-//     width: 90vw;
-//   }
+  /* 박스의 너비 조정 */
+  .contentBox,
+  .project>div {
+    width: 90vw;
+  }
 
-//   /* 이미지 크기 조정 */
-//   .project img {
-//     width: 80%;
-//     height: auto;
-//   }
+  /* 이미지 크기 조정 */
+  .project img {
+    width: 80%;
+    height: auto;
+  }
 
-//   /* 텍스트 정렬 및 여백 조정 */
-//   .contentBox div,
-//   .fontContent div {
-//     padding: 1vh;
-//   }
+  /* 텍스트 정렬 및 여백 조정 */
+  .contentBox div,
+  .fontContent div {
+    padding: 1vh;
+  }
 
-//   .contentImage div h4 {
-//     margin-bottom: 3px;
-//   }
+  .contentImage div h4 {
+    margin-bottom: 3px;
+  }
 
-//   .contentImage div p {
-//     padding-bottom: 5px;
-//   }
+  .contentImage div p {
+    padding-bottom: 5px;
+  }
 
-//   /* 기타 스타일 조정 */
-//   .stackBox {
-//     width: 70vw;
-//   }
+  /* 기타 스타일 조정 */
+  .stackBox {
+    width: 70vw;
+  }
 
-//   .stackBoxTwo p,
-//   .stackBoxThree p {
-//     width: 100vw;
-//     font-size: 0.6rem;
-//   }
-// }
+  .stackBoxTwo p,
+  .stackBoxThree p {
+    width: 100vw;
+    font-size: 0.6rem;
+  }
+}
