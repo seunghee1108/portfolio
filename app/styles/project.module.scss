@@ -19,8 +19,6 @@
   font-style: normal;
 }
 
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -48,51 +46,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //   flex-wrap: wrap;
 }
-
 
 .box4 {
   height: 100vh;
   display: flex;
-  // flex-wrap: wrap;
   background-color: #ffffff;
-
   justify-content: center;
   align-items: center;
 }
-
-.box5 {
-  height: 100vh;
-  background-color: #FFFFFF;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-}
-
-.contact {
-  font-size: 2rem;
-
-  color: white;
-  /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
-}
-
-
 
 .project {
   display: flex;
   flex-direction: row;
   background-color: #FFFFFF;
-
-  // margin: 3vw;
 }
-
 
 .project>div {
   width: 33vw;
   height: 60vh;
   background-color: #EEEEEE;
-  // margin-right: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,93 +74,76 @@
 
 .fontBox {
   width: 100%;
-  /* div의 전체 너비를 차지하도록 설정합니다. */
   margin-top: 10px;
-  /* 이미지와의 간격을 조정합니다. */
   margin-left: 2vw;
   align-items: center;
   display: flex;
-
 }
 
 .project div h2 {
   font-size: 1.5em;
-  /* h2의 글꼴 크기를 조정합니다. */
 }
 
 .project div h3 {
   font-size: 1.1em;
-  /* p의 글꼴 크기를 조정합니다. */
   margin: 13px;
-  /* h2와 p 사이의 간격을 조정합니다. */
 }
-
 
 .project img {
   width: 34vw;
   height: 60vh;
-
-
   border-radius: 5px;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //     flex-wrap: wrap;
-
-  transition: filter 0.3s ease; /* 효과를 부드럽게 적용하기 위한 transition 설정 */
+  transition: filter 0.3s ease;
 }
 
 .project img:hover {
-  filter: blur(10px); /* 이미지에 블러 효과 적용 */
+  filter: blur(10px);
 }
 
-.imageContainer{
+.imageContainer {
   position: relative;
 }
 
-.caption{
+.caption {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 텍스트를 중앙 정렬하기 위한 transform */
-  font-size: 16px; /* 텍스트 크기 설정 */
-  color: black; /* 텍스트 색상 설정 */
-  opacity: 0; /* 초기에는 숨김 상태로 설정 */
-  transition: opacity 0.3s ease; /* 효과를 부드럽게 적용하기 위한 transition 설정 */
-  letter-spacing: 2px; /* 글자 간격을 2px로 설정합니다. */
-
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  letter-spacing: 2px;
 }
+
 .imageContainer:hover img {
-  filter: blur(10px); /* 이미지에 마우스 호버 시 블러 효과 적용 */
+  filter: blur(10px);
 }
 
-
-.imageContainer:hover .caption  {
-  opacity: 1; /* 이미지에 호버할 때 텍스트가 나타나도록 설정 */
+.imageContainer:hover .caption {
+  opacity: 1;
   cursor: default;
 }
 
 .caption p {
-  margin-bottom: 3vw; /* 문단 사이의 간격을 설정합니다. */
-  // cursor: pointer;
-
+  margin-bottom: 3vw;
 }
 
 .caption h1 {
-  margin-bottom: 2vw; /* 제목과 다음 요소 사이의 간격을 조정합니다. */
+  margin-bottom: 2vw;
 }
 
 .caption:hover img {
-  filter: blur(10px); /* 텍스트에 마우스를 올렸을 때 이미지의 블러 효과가 유지됩니다. */
+  filter: blur(10px);
 }
 
 .caption a {
-  color: #000; /* 기본 텍스트 색상 */
-  text-decoration: none; /* 기본 링크 밑줄 제거 */
-  transition: color 0.3s ease; /* 색상 변화에 애니메이션 적용 */
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .caption a:hover {
-  color: #0433ff; /* 호버 시 색상 변경 */
-  text-decoration: underline; /* 호버 시 밑줄 생성 */
+  color: #0433ff;
+  text-decoration: underline;
 }
