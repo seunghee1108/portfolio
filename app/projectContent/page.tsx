@@ -112,6 +112,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
         </div>
 
         <div className={styles.link}>
+        {project !== 'ERP-PROJECT' && selectedProjectInfo.link && (
           <div>
             <h5>URL</h5>
             <a
@@ -122,6 +123,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               <img src="/link.png" alt="link" />
             </a>
           </div>
+        )}
           <div className={styles.line}> </div>
           <div>
             <h5>GitHub</h5>
