@@ -80,7 +80,7 @@
 }
 
 .contentImage img {
-  width:35vw;
+  width: 35vw;
   height: 55vh;
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@
 .contentBox h4 {
   font-family: 'Pretendard-Bold';
   margin-bottom: 1vh;
-  background-color: #F7F7F7; 
+  background-color: #F7F7F7;
   font-weight: bold;
   font-size: 1rem;
   padding: 5px 10px;
@@ -115,47 +115,54 @@
     padding: 1vh;
     color: #333;
   }
+
   p {
-    margin-bottom: 1vh; 
+    margin-bottom: 1vh;
     text-align: justify;
-    line-height: 1.5; 
+    line-height: 1.5;
     margin-left: 1vh;
     font-family: 'Pretendard-Light';
-  };
+    font-size: 1rem;
+  }
+
+  ;
 }
 
-.link{
+.link {
   margin-top: 2vh;
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin-left: 1vw;
-  border: none; 
+  border: none;
+
   img {
     width: 2vw;
     height: 4vh;
-   }
-   a{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-right: 20px;
-}
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
 }
 
 .line {
   flex: 0 0 auto;
-  height :10vh; 
-  border-left: 1px solid #ddd; 
+  height: 10vh;
+  border-left: 1px solid #ddd;
   margin: 0 15px;
 }
 
-.link > div {
- h5 {
-  margin-right: 2vh;
-  text-align: center;
- margin-bottom: 2vh; 
-}}
+.link>div {
+  h5 {
+    margin-right: 2vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+}
 
 
 
@@ -238,7 +245,7 @@
   height: 10px;
   border: none;
   border-radius: 50%;
-  background-color:  black;
+  background-color: black;
   cursor: pointer;
 }
 
@@ -263,15 +270,18 @@
   }
 
   .contentBox h1 {
-    font-size: 28px; /* 원하는 크기로 조정 */
+    font-size: 28px;
+    /* 원하는 크기로 조정 */
   }
 
   .contentBox p {
-    font-size: 16px; /* 원하는 크기로 조정 */
+    font-size: 16px;
+    /* 원하는 크기로 조정 */
   }
 
   .contentBox h4 {
-    font-size: 20px; /* 원하는 크기로 조정 */
+    font-size: 20px;
+    /* 원하는 크기로 조정 */
   }
 
   .contentBox .link {
