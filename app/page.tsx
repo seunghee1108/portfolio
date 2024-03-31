@@ -29,6 +29,7 @@ function Index() {
     setSelectedProject(project);
   };
 
+  // 스크롤 에러 해결해야됨
   const handleProjectContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
     // 클릭된 요소의 부모나 조상 요소들을 확인하여 특정 클래스를 가지고 있는지 확인
     const clickedElement = e.target as HTMLElement;
@@ -53,7 +54,6 @@ function Index() {
           box2Ref={box2Ref}
           box3Ref={box3Ref}
           box4Ref={box4Ref}
-          // box5Ref={box5Ref}
         />
       </div>
 
