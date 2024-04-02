@@ -24,7 +24,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
     TOURMAPS: {
       number: "01",
       description:
-      "<span className={styles.font}공공데이터포털에서 제공하는 OPEN API를 활용하여 다양한 여행 정보를 제공하는 웹 사이트입니다.</span> 사용자는 키워드를 입력하여 검색하거나 지역별, 코스별로 여행 코스를 추천받을 수 있습니다. 여행 계획을 세울 때 정보 수집이 번거롭고 복잡하다는 느낌을 받아 이러한 경험을 공유하고자 제작하게 되었습니다. React와 Next.js를 활용하여 사용자 경험을 개선했고, 서버와 클라이언트 간의 데이터 통신 방법에 대한 이해를 향상시켰습니다. 또한, AWS를 활용하여 웹 사이트를 배포하는 과정을 경험했습니다.",
+      "공공데이터포털에서 제공하는 OPEN API를 활용하여 다양한 여행 정보를 제공하는 웹 사이트입니다. 사용자는 키워드를 입력하여 검색하거나 지역별, 코스별로 여행 코스를 추천받을 수 있습니다. 여행 계획을 세울 때 정보 수집이 번거롭고 복잡하다는 느낌을 받아 이러한 경험을 공유하고자 제작하게 되었습니다. React와 Next.js를 활용하여 사용자 경험을 개선했고, 서버와 클라이언트 간의 데이터 통신 방법에 대한 이해를 향상시켰습니다. 또한, AWS를 활용하여 웹 사이트를 배포하는 과정을 경험했습니다.",
       link: "http://tourmaps.seungheee.net/",
       github: "https://github.com/seunghee1108/tourmaps",
       notion:
@@ -58,8 +58,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
 
       review:
         "팀 프로젝트를 시작할 때에는 Git 충돌과 Branch 관리 등에서 어려움을 겪었지만, 서로의 부족한 부분을 논의하고 경험을 쌓아가며 문제를 극복할 수 있었습니다. 이를 통해 팀 작업 시 해야 할 방향들을 명확히 할 수 있었습니다. 기술적 한계를 극복하기 위해 팀 회의와 지식 공유를 통해 점차 성장해 나갈 수 있었습니다. 결과적으로 Next.js와 데이터베이스까지 코드 작업을 끌어올려서 프로젝트를 마무리할 수 있었습니다. 문제가 발생했을 때 팀원들과 함께 논의하고 해결책을 찾아내는 과정에서 자신감을 얻고 이러한 경험으로 성취감을 크게 느낄 수 있었으며, 팀의 협업과 창의성을 향상시키는 데 도움이 되었습니다.",
-      technology:
-        "TypeScript, Node.js, Express, Next.js, MariaDB, React, Babel, JsonWebToken, TailWindCSS",
+      technology: "TypeScript, Node.js, Express, Next.js, MariaDB, React, Babel, JsonWebToken, TailWindCSS",
       images: ["/erp.png", "/erp2.png", "/erp3.png"],
     },
   };
