@@ -24,7 +24,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
     TOURMAPS: {
       number: "01",
       description:
-      "<span style="display: block;">아아</span>공공데이터포털에서 제공하는 OPEN API를 활용하여 다양한 여행 정보를 제공하는 웹 사이트입니다. 사용자는 키워드를 입력하여 검색하거나 지역별, 코스별로 여행 코스를 추천받을 수 있습니다. 여행 계획을 세울 때 정보 수집이 번거롭고 복잡하다는 느낌을 받아 이러한 경험을 공유하고자 제작하게 되었습니다. React와 Next.js를 활용하여 사용자 경험을 개선했고, 서버와 클라이언트 간의 데이터 통신 방법에 대한 이해를 향상시켰습니다. 또한, AWS를 활용하여 웹 사이트를 배포하는 과정을 경험했습니다.",
+      "<span className={styles.font}공공데이터포털에서 제공하는 OPEN API를 활용하여 다양한 여행 정보를 제공하는 웹 사이트입니다.</span> 사용자는 키워드를 입력하여 검색하거나 지역별, 코스별로 여행 코스를 추천받을 수 있습니다. 여행 계획을 세울 때 정보 수집이 번거롭고 복잡하다는 느낌을 받아 이러한 경험을 공유하고자 제작하게 되었습니다. React와 Next.js를 활용하여 사용자 경험을 개선했고, 서버와 클라이언트 간의 데이터 통신 방법에 대한 이해를 향상시켰습니다. 또한, AWS를 활용하여 웹 사이트를 배포하는 과정을 경험했습니다.",
       link: "http://tourmaps.seungheee.net/",
       github: "https://github.com/seunghee1108/tourmaps",
       notion:
